@@ -8,19 +8,17 @@
     <header class="site-header"> 
       <nav class="site-header__site-nav">
         <a class="site-header__logo" href="index.html">Device</a>
-        <input class="site-header__search" type="search" name="search" id="search" value="Поиск по сайту">
+        <input class="site-header__search" type="search" name="search" id="search" placeholder="Поиск по сайту">
         <ul class="site-header__user-block user-block">
             <li class="user-block-item">
-              <a class="user-block__link_profile" href="#">Валентин Петухов</a>
+              <a class="user-block__link user-block__link_profile" href="#">Валентин Петухов</a>
+              <a class="user-block__link user-block__link_logout" href="#">Выйти</a>
             </li>
             <li class="user-block-item">
-              <a class="user-block__link_logout" href="#">Выйти</a>
+                <a class=" user-block__link user-block__link_compare" href="#">Сравнить</a>
             </li>
             <li class="user-block-item">
-                <a class="user-block__link_compare" href="#">Сравнить</a>
-            </li>
-            <li class="user-block-item">
-                <a class="user-block__link_basket" href="#">Корзина</a>
+                <a class="user-block__link user-block__link_basket" href="#">Корзина</a>
             </li>
         </ul>
         <ul class="site-header__menu menu">
@@ -50,33 +48,33 @@
             <a class="breadscrumbs__link" href="#">Каталог товаров</a>
           </li>
           <li class="breadscrumbs__item">
-            <a class="breadscrumbs__link link_" href="#">Моноподы для селфи</a>
+            <a class="breadscrumbs__link">Моноподы для селфи</a>
           </li>
         </ul>
       </section>
       <section class="catalog-filter">
         <form class="filter">
-          <fieldset class="filter-color">
-            <legend class="filter-color_legend">Цвет</legend>
-            <input class="filter-color__checkbox" type="checkbox" name="black" id="black" checked="">
-            <label for="black">Черный</label>
-            <input class="filter-color__checkbox" type="checkbox" name="white" id="white">
-            <label for="white">Белый</label>
-            <input class="filter-color__checkbox" type="checkbox" name="blue" id="blue" checked="">
-            <label for="blue">Синий</label>
-            <input class="filter-color__checkbox" type="checkbox" name="red" id="red" checked="">
-            <label for="red">Красный</label>
-            <input class="filter-color__checkbox" type="checkbox" name="pink" id="pink">
-            <label for="pink">Розовый</label>
+          <fieldset class="filter-group filter-group_checkbox">
+            <legend class="filter-group__title">Цвет</legend>
+            <input class="filter-group__checkbox" type="checkbox" name="black" id="black" checked>
+            <label class="filter-group__label" for="black">Черный</label>
+            <input class="ffilter-group__checkbox" type="checkbox" name="white" id="white">
+            <label class="filter-group__label" for="white">Белый</label>
+            <input class="filter-group__checkbox" type="checkbox" name="blue" id="blue" checked>
+            <label class="filter-group__label" for="blue">Синий</label>
+            <input class="filter-group__checkbox" type="checkbox" name="red" id="red" checked>
+            <label class="filter-group__label" for="red">Красный</label>
+            <input class="filter-group__checkbox" type="checkbox" name="pink" id="pink">
+            <label class="filter-group__label" for="pink">Розовый</label>
           </fieldset>
-          <fieldset class="filter-bth">
-            <legend class="filter-bth__legend">Bluetooth</legend>
-            <input class="filter-bth__radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked="">
-            <label for="bth-yes">Есть</label>
-            <input class="filter-bth__radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
-            <label for="bth-no">Нет</label>
+          <fieldset class="filter-group filter-group_radio">
+            <legend class="filter-group__legend">Bluetooth</legend>
+            <input class="filter-group__radio" type="radio" value="Есть" name="bluetooth" id="bth-yes" checked>
+            <label class="filter-group__label" for="bth-yes">Есть</label>
+            <input class="filter-group__radio" type="radio" value="Нет" name="bluetooth" id="bth-no">
+            <label class="filter-group__label" for="bth-no">Нет</label>
           </fieldset>
-          <button class="filter__btn btn" type="submit">Показать</button>
+          <button class="filter-group__btn btn" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog">
@@ -110,8 +108,6 @@
                <ul class="site-footer__user-block user-block">
                     <li class="user-block-item">
                         <a class="user-block__link_profile" href="#">Валентин Петухов</a>
-                    </li>
-                    <li class="user-block-item">
                         <a class="user-block__link_logout" href="#">Выйти</a>
                         </li>
                     <li class="user-block-item">
