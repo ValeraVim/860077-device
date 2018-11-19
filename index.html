@@ -38,36 +38,74 @@
     </header>
     <main class="site-main">
       <section class="slider">
-        <section class="slider__slide slide">
+        <section class="slider__slide slide slide_1">
           <!--Здесь должен быть переключатель слайдера, но я пока не придумала, как его реализовать-->
-          <img class="slide__img img img_1" src="img/slide-1.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
-          <span class="slide_number">01</span>
-          <div class="slide__description description">
-            <h2 class="description__title">
+          <img class="slide__img" src="img/slide-1.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
+          <div class="slide__description">
+            <h2 class="slide__title">
               Делай селфи, <br>
               как Бен Стиллер!
             </h2>
-            <p class="description__content">Самая длинная палка для селфи доступна в нашем магазине.</p>
-            <p class="description__content">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="description__btn btn" href="#">Подробнее</a>
-            <table class="description__table table">
+            <p class="slide__text">Самая длинная палка для селфи доступна в нашем магазине.</p>
+            <p class="slide__text">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="slide__btn btn" href="#">Подробнее</a>
+            <table class="slide__table table">
               <tr class="table_row table_row_first">
                 <td class="table__cell">8,5 м</td>
                 <td class="table__cell">5 кг</td>
                 <td class="table__cell">Карбон</td>
               </tr>
               <tr class="table_row table_row_second">
-                <td class="table__cell">Длина палки</td>
-                <td class="table__cell">Вес палки</td>
-                <td class="table__cell">Материал</td>
+                <th class="table__cell">Длина палки</th>
+                <th class="table__cell">Вес палки</th>
+                <th class="table__cell">Материал</th>
               </tr>
             </table>
           </div>
         </section>
-        <section class="slider__slide slide"></section>
-        <section class="slider__slide slide"></section>
+        <section class="slider__slide slide slide_2">
+            <img class="slide__img" src="img/slide-2.png" width="345" height="485" alt="Мотивирующий фитнес браслет">
+            <div class="slide__description">
+              <h2 class="slide__title">
+                Худеем <br>
+                правильно!
+              </h2>
+              <p class="slide__text">Мотивирующие фитнесc-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="slide__btn btn" href="#">Подробнее</a>
+              <table class="slide__table table">
+                <tr class="table_row table_row_first">
+                  <td class="table__cell">48 часов</td>
+                </tr>
+                <tr class="table_row table_row_second">
+                  <th class="table__cell">Без подзарядки</th>
+                </tr>
+              </table>
+            </div>
+        </section>
+        <section class="slider__slide slide slide_3">
+            <img class="slide__img" src="img/slide-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
+            <div class="slide__description">
+              <h2 class="slide__title">
+                Порхает как бабочка,
+                <br>
+                жалит как пчела!
+              </h2>
+              <p class="slide__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="slide__btn btn" href="#">Подробнее</a>
+              <table class="slide__table table">
+                <tr class="table_row table_row_first">
+                  <td class="table__cell">800 м</td>
+                  <td class="table__cell">50 м</td>
+                </tr>
+                <tr class="table_row table_row_second">
+                  <th class="table__cell">Дальность полета</th>
+                  <th class="table__cell">Радиус поражения</th>
+                </tr>
+              </table>
+            </div>
+        </section>
       </section>
-      <section class="product-type"> <!--Думала сделать это списком, но показалось, что это будет уже перебор-->
+      <section class="product-type"> 
         <a class="product-type__link" href="#">
           <div class="product-type__item">
             <img class="product-type__img" src="img/virtual" width="97" height="55" alt="virtual">
@@ -106,42 +144,42 @@
         </a>
       </section>
       <section class="services">
-        <ul class="services-list ">
-          <li class="services-list__item">
-            <a class="services-list__btn btn">
+        <ul class="services-tabs-bar ">
+          <li class="services-tabs-bar__item">
+            <a class="services-tabs-bar__btn btn">
                Доставка
             </a>
           </li>
-          <li class="services-list__item">
-              <a class="services-list__btn btn">
+          <li class="services-tabs-bar__item">
+              <a class="services-tabs-bar__btn btn">
                 Гарантия
               </a>
           </li>
-          <li class="services-list__item">
-              <a class="services-list__btn btn">
+          <li class="services-tabs-bar__item">
+              <a class="services-tabs-bar__btn btn">
                 Кредит
               </a>
           </li>
         </ul>
-        <section class="services__item item item_delivery">
-          <h2 class="item__title">Доставка</h2>
-          <p class="item__content">
-           Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-          <!--<img class="item_img item_img_devivery" scr="img/devivery" width="" height="" alt=""> Из скетча не могу понять как делать иконку-->
-        </section>
-        <section class="services__item item item_warranty">
-          <h2 class="item__title">Гарантия</h2>
-          <p class="item__content">
-            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.  Товар, не дом, конечно же.
-          </p>
-        </section>
-        <section class="services__item item tem_credit">
-          <h2 class="item__title">Кредит</h2>
-          <p class="item__content">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
-          </p> 
-        </section>
+        <section class="services-tabs">
+      <section class="services-tabs__item services-tabs__item_delivery">
+        <h2 class="services-tabs__title">Доставка</h2>
+        <p class="services-tabs__description">
+          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+        </p>
+      </section>
+      <section class="services__item item item_warranty">
+        <h2 class="item__title">Гарантия</h2>
+        <p class="item__content">
+          Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.  Товар, не дом, конечно же.
+        </p>
+      </section>
+      <section class="services__item item tem_credit">
+        <h2 class="item__title">Кредит</h2>
+        <p class="item__content">
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
+        </p> 
+      </section>
       </section>
       <section class="partners">
         <ul class="partners-list">
