@@ -52,28 +52,24 @@
           </li>
         </ul>
       </section>
-      <section class="titles">
-        <div class="titles_filter">
-          <h2 class="titles__title">Фильтр:</h2>
-        </div>
-        <div class="titles_sorting">
-          <h2 class="titles__title">Сортировка:</h2>
-          <ul class="titles__list">
-            <li class="titles__item">
-              <a class="titles__link" href="#">По цене</a>
-            </li>
-            <li class="titles__item">
-              <a class="titles__link" href="#">По типу</a>
-            </li>
-            <li class="titles__item">
-              <a class="titles__link" href="#">По популярности</a>
-            </li>
-          </ul>
-        </div>
+      <section class="sorting">
+        <h2 class="sorting__title">Сортировка:</h2>
+        <ul class="sorting__list">
+          <li class="sorting__item">
+            <a class="sorting__link" href="#">По цене</a>
+          </li>
+          <li class="sorting__item">
+            <a class="sorting__link" href="#">По типу</a>
+          </li>
+          <li class="sorting__item">
+            <a class="sorting__link" href="#">По популярности</a>
+          </li>
+        </ul>
       </section>
       <section class="catalog-filter">
         <form class="filter">
-          <fieldset class="filter__group filter__group_range-controls">
+          <h2 class="filter__title">Фильтр:</h2>
+          <fieldset class="filter__group filter__group_range">
             <legend class="filter__title">Стоимость</legend>
             <!--Здесь будет управление диапазоном стоимости-->
           </fieldset>
@@ -123,23 +119,19 @@
         </article>
       </section>
       <section class="catalog-nav">
-        <ul class="catalog-nav__list">
-            <li class="catalog-nav__item catalog-nav__item_back">
-              <a class="catalog-nav__link catalog-nav__link_back" href="#">Назад</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="#">1</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="#">2</a>
-            </li>
-            <li class="catalog-nav__item">
-              <a class="catalog-nav__link" href="#">3</a>
-            </li>
-            <li class="catalog-nav__item catalog-nav__item_next">
-              <a class=" catalog-nav__link catalog-nav__link_next" href="#">Вперед</a>
-            </li>
-          </ul>
+        <a class="catalog-nav__btn catalog-nav__btn_prev" href="#">Назад</a>
+        <ul class="catalog-nav__pagination">
+          <li class="catalog-nav__pagination-item">
+            <a class="catalog-nav__pagination-link" href="#">1</a>
+          </li>
+          <li class="catalog-nav__pagination-item">
+            <a class="catalog-nav__pagination-link" href="#">2</a>
+          </li>
+          <li class="catalog-nav__pagination-item">
+            <a class="catalog-nav__pagination-link" href="#">3</a>
+          </li>
+        </ul>
+        <a class="catalog-nav__btn catalog-nav__btn_next" href="#">Вперед</a>
       </section>
     </main>
     <footer class="site-footer">
