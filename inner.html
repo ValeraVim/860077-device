@@ -52,8 +52,31 @@
           </li>
         </ul>
       </section>
+      <section class="titles">
+        <div class="titles_filter">
+          <h2 class="titles__title">Фильтр:</h2>
+        </div>
+        <div class="titles_sorting">
+          <h2 class="titles__title">Сортировка:</h2>
+          <ul class="titles__list">
+            <li class="titles__item">
+              <a class="titles__link" href="#">По цене</a>
+            </li>
+            <li class="titles__item">
+              <a class="titles__link" href="#">По типу</a>
+            </li>
+            <li class="titles__item">
+              <a class="titles__link" href="#">По популярности</a>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="catalog-filter">
         <form class="filter">
+          <fieldset class="filter__group filter__group_range-controls">
+            <legend class="filter__title">Стоимость</legend>
+            <!--Здесь будет управление диапазоном стоимости-->
+          </fieldset>
           <fieldset class="filter__group filter__group_checkbox">
             <legend class="filter__title">Цвет</legend>
             <input class="filter__checkbox" type="checkbox" name="black" id="black" checked>
@@ -98,7 +121,26 @@
             <a class="card-product__description" href="#">Селфи-палка «Следуй за мной»</a>
             <span class="card-product__price">4900руб.</span>
         </article>
-     </section>
+      </section>
+      <section class="catalog-nav">
+        <ul class="catalog-nav__list">
+            <li class="catalog-nav__item catalog-nav__item_back">
+              <a class="catalog-nav__link catalog-nav__link_back" href="#">Назад</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link" href="#">1</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link" href="#">2</a>
+            </li>
+            <li class="catalog-nav__item">
+              <a class="catalog-nav__link" href="#">3</a>
+            </li>
+            <li class="catalog-nav__item catalog-nav__item_next">
+              <a class=" catalog-nav__link catalog-nav__link_next" href="#">Вперед</a>
+            </li>
+          </ul>
+      </section>
     </main>
     <footer class="site-footer">
             <nav class="site-footer__nav">
