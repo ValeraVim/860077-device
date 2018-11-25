@@ -8,7 +8,9 @@
     <header class="site-header"> 
       <nav class="site-header__nav">
         <a class="site-header__logo">Device</a>
-        <input class="site-header__search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <form class="form__search" action="" method="POST">
+          <input class="site-header__search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+        </form>
         <ul class="site-header__user-block user-block">
           <li class="user-block__item">
             <a class="user-block__link user-block__link_login" href="#">Войти</a>
@@ -293,5 +295,27 @@
         </ul>
       </nav>
     </footer>
+    <div class="form">
+      <button class="form__close">Закрыть</button>
+      <form class="form_write-us" action="" method="post">
+        <label class="form__name" for="input_name">
+          Ваше имя:
+          <input class="form__input_name" id="input_name" type="text" name="name" placeholder="Представтесь, пожалуйста">
+        </label>
+        <label class="form__email" for="input_email">
+          Ваш e-mail:
+          <input class="form__input_email" id="input_email" type="text" name="email" placeholder="Для отправки ответа">
+        </label>
+        <label class="form__letter" for="input_letter">
+          Текст письма:
+          <textarea name="form__input_letter" id="input_letter" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="form__btn btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-map" id="yandex-map">
+      <button class="modal-close" type="button">Закрыть</button>
+      <!--Большая карта-->
+    </div> 
   </body>
 </html>
