@@ -8,7 +8,13 @@
     <header class="site-header"> 
       <nav class="site-header__nav">
         <a class="site-header__logo" href="index.html">Device</a>
-        <input class="site-header__search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
+          <label class="form-search__label" for="search">
+            <img class="form-search__icon" src="img/search-icon.svg" alt="Иконка поиска">
+          </label>
+          <input class="form-search__input" type="search" name="search" id="search" placeholder="Поиск по сайту" value="Поиск по сайту">
+          <button class="form-search__btn">Найти</button>
+        </form>
         <ul class="site-header__user-block user-block">
             <li class="user-block__item">
               <a class="user-block__link user-block__link_profile" href="#">Валентин Петухов</a>
