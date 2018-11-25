@@ -8,8 +8,12 @@
     <header class="site-header"> 
       <nav class="site-header__nav">
         <a class="site-header__logo">Device</a>
-        <form class="form__search" action="" method="POST">
-          <input class="site-header__search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
+          <label class="form-search__label" for="search">
+            <img class="form-search__icon" src="img/search-icon.svg" alt="Иконка поиска">
+          </label>
+          <input class="form-search__input" type="search" name="search" id="search" placeholder="Поиск по сайту" value="Поиск по сайту">
+          <button class="form-search__btn">Найти</button>
         </form>
         <ul class="site-header__user-block user-block">
           <li class="user-block__item">
@@ -25,6 +29,26 @@
         <ul class="site-header__menu menu">
           <li class="menu__item">
             <a class="menu__link" href="#">Каталог товаров</a>
+            <ul class="memu__sub-menu sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="inner.html">Моноподы для селфи</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="sub-menu__item">
+                 <a class="sub-menu__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Умные часы</a>
+              </li>
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Квадрокоптеры</a>
+              </li>
+           </ul>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Доставка</a>
@@ -40,6 +64,14 @@
     </header>
     <main class="site-main">
       <section class="slider">
+        <form class="slider-switch">
+            <label class="slider-switch__label visually-hidden" for="first-slide">Первый слайд</label>
+            <input class="slider-switch__radio" type="radio"  name="slide" id="first-slide">
+            <label class="slider-switch__label visually-hidden" for="second-slide">Второй слайд</label>            
+            <input class="slider-switch__radio" type="radio"  name="slide" id="second-slide">
+            <label class="slider-switch__label visually-hidden" for="third-slide">Третий слайд</label>
+            <input class="slider-switch__radio" type="radio"  name="slide" id="third-slide">
+        </form>
         <section class="slider__item slider__item_1">
           <!--Здесь должен быть переключатель слайдера, но я пока не придумала, как его реализовать-->
           <img class="slider__img" src="img/slide_selfie-stick.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
@@ -108,11 +140,11 @@
         </section>
       </section>
       <section class="product-type"> 
-        <ul>
+        <ul class="product-type__list">
           <li class="product-type__item">
             <a class="product-type__link" href="#">
               <div class="product-type__wrap">
-                <img class="product-type__img" src="img/virtual" width="97" height="55" alt="virtual">
+                <img class="product-type__img" src="img/virtual" width="97" height="55" alt="Иконка 'Виртуальная реальность'">
               </div>
               Виртуальная реальность
             </a>
@@ -120,7 +152,7 @@
           <li class="product-type__item">
             <a class="product-type__link" href="inner.html">
               <div class="product-type__wrap">
-                <img class="product-type__img" src="img/monopods" width="87" height="117" alt="monopods">
+                <img class="product-type__img" src="img/monopods" width="87" height="117" alt="Иконка 'Монопод'">
               </div>
               Моноподы для селфи 
             </a>
@@ -128,7 +160,7 @@
           <li class="product-type__item">
             <a class="product-type__link" href="#">
               <div class="product-type__wrap">
-               <img class="product-type__img" src="img/cameras" width="72" height="88" alt="cameras">
+               <img class="product-type__img" src="img/cameras" width="72" height="88" alt="Иконка 'Камера'">
               </div>
               Экшн-камеры 
             </a>
@@ -136,15 +168,15 @@
         <li class="product-type__item">
         <a class="product-type__link" href="#">
             <div class="product-type__wrap">
-              <img class="product-type__img" src="img/bracelets" width="97" height="55" alt="bracelets">
+              <img class="product-type__img" src="img/bracelets" width="97" height="55" alt="Иконка 'Фитнесc-браслет'">
             </div>
-            Фитнес браслеты
+            Фитнес-браслеты
         </a>
         </li>
         <li class="product-type__item">
           <a class="product-type__link" href="#">
             <div class="product-type__wrap">
-              <img class="product-type__img" src="img/watch" width="57" height="98" alt="watch">
+              <img class="product-type__img" src="img/watch" width="57" height="98" alt="Иконка 'Умные часы'">
             </div>
             Умные часы
           </a>
@@ -152,7 +184,7 @@
         <li class="product-type__item">
           <a class="product-type__link" href="#">
             <div class="product-type__wrap">
-              <img class="product-type__img" src="img/quadcopters" width="133" height="70" alt="quadcopters">
+              <img class="product-type__img" src="img/quadcopters" width="133" height="70" alt="Иконка 'Квадрокоптер'">
             </div>
             Квадрокоптеры
           </a>
@@ -183,21 +215,21 @@
             <p class="services-tabs__description">
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
-            <img class="services-tabs__img" src="img/services-tabs_delivery.svg" width="136" height="164" alt="icon-delivery">
+            <img class="services-tabs__img" src="img/services-tabs_delivery.svg" width="136" height="164" alt="Иконка 'Доставка'">
           </section>
           <section class="services-tabs__item services-tabs_warranty">
             <h2 class="services-tabs__title">Гарантия</h2>
             <p class="services-tabs__description">
               Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.  Товар, не дом, конечно же.
             </p>
-            <img class="services-tabs__img" src="img/services-tabs_warranty.svg" width="171" height="194" alt="icon-warranty">
+            <img class="services-tabs__img" src="img/services-tabs_warranty.svg" width="171" height="194" alt="Иконка 'Гарантия'">
           </section>
           <section class="services-tabs__item services-tabs_credit">
             <h2 class="services-tabs__title">Кредит</h2>
             <p class="services-tabs__description">
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
           </p> 
-          <img class="services-tabs__img" src="img/services-tabs_credit.svg" width="156" height="186" alt="icon-credit">
+          <img class="services-tabs__img" src="img/services-tabs_credit.svg" width="156" height="186" alt="Иконка 'Кредит'">
           </section>
         </section>
       </section> 
@@ -205,26 +237,26 @@
         <ul class="partners-list">
           <li class="partners-list__item">
             <a class="partners-list__link" href="http://www.dji.com/">
-              <img class="partners-list__img" src="img/dji-logo_gray.jpg" width="260" height="100" alt="DjI">
-              <img class="partners-list__img partners-list__img_color" src="img/dji-logo_color.jpg" width="260" height="100" alt="DjI-color">
+              <img class="partners-list__img" src="img/dji-logo_gray.jpg" width="260" height="100" alt="Логотип DjI">
+              <img class="partners-list__img partners-list__img_color" src="img/dji-logo_color.jpg" width="260" height="100" alt="Логотип DjI">
             </a>
           </li>
           <li class="partners-list__item">
               <a class="partners-list__link" href="http://www.sp-gadgets.com/">
-                <img class="partners-list__img" src="img/sp-gadgets-logo_gray.jpg" width="260" height="100" alt="Sp-Gadgets">
-                <img class="partners-list__img partners-list__img_color" src="img/sp-gadgets-logo_color.jpg" width="260" height="100" alt="Sp-Gadgets-color">
+                <img class="partners-list__img" src="img/sp-gadgets-logo_gray.jpg" width="260" height="100" alt="Логотип Sp-Gadgets">
+                <img class="partners-list__img partners-list__img_color" src="img/sp-gadgets-logo_color.jpg" width="260" height="100" alt="Логотип Sp-Gadgets">
               </a>
           </li>
           <li class="partners-list__item">
               <a class="partners-list__link" href="http://www.gopro.ru/">
-                <img class="partners-list__img" src="img/gopro-logo_gray.jpg" width="260" height="100" alt="GoPro">
-                <img class="partners-list__img partners-list__img_color" src="img/gopro-logo_color.jpg" width="260" height="100" alt="GoPro-color">
+                <img class="partners-list__img" src="img/gopro-logo_gray.jpg" width="260" height="100" alt="Логотип GoPro">
+                <img class="partners-list__img partners-list__img_color" src="img/gopro-logo_color.jpg" width="260" height="100" alt="Логотип GoPro">
               </a>
           </li>
           <li class="partners-list__item">
               <a class="partners-list__link" href="http://www.htcvive.com/">
-                <img class="partners-list__img" src="img/vive-logo_gray.jpg" width="260" height="100" alt="Vive">
-                <img class="partners-list__img partners-list__img_color" src="img/vive-logo_color.jpg" width="260" height="100" alt="Vive-color">
+                <img class="partners-list__img" src="img/vive-logo_gray.jpg" width="260" height="100" alt="Логотип Vive">
+                <img class="partners-list__img partners-list__img_color" src="img/vive-logo_color.jpg" width="260" height="100" alt="Логотип Vive">
               </a>
           </li>
         </ul>
@@ -278,42 +310,42 @@
         </ul>
         <ul class="site-footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link socials__link_fb" href="#">
-              <img class="socials__img socials__img_fb" src="img/fb-icon.svg" width="32" height="32" alt="icon-fb">
+            <a class="socials__link socials__link_fb" href="#" aria-label="Мы в фейсбуке">
+              <img class="socials__img socials__img_fb" src="img/fb-icon.svg" width="32" height="32" alt="icon-facebook">
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link_insta" href="#">
-              <img class="socials__img socials__img_insta" src="img/insta-icon.svg" width="32" height="32" alt="icon-insta ">
+            <a class="socials__link socials__link_insta" href="#" aria-label="Мы в инстаграмме">
+              <img class="socials__img socials__img_insta" src="img/insta-icon.svg" width="32" height="32" alt="icon-insta gram">
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link_tw" href="#">
-              <img class="socials__img socials__img_tw" src="img/tw-icon.svg" width="32" height="32" alt="icon-tw">
+            <a class="socials__link socials__link_tw" href="#" aria-label="Мы в твиттере">
+              <img class="socials__img socials__img_tw" src="img/tw-icon.svg" width="32" height="32" alt="icon-twitter">
             </a>
           </li>
         </ul>
       </nav>
     </footer>
-    <div class="form">
-      <button class="form__close">Закрыть</button>
-      <form class="form_write-us" action="" method="post">
-        <label class="form__name" for="input_name">
+    <div class="modal modal_write-us">
+      <button class="modal__close">Закрыть</button>
+      <form class="form-write-us" action="" method="post">
+        <label class="form-write-us__label" for="input-name">
           Ваше имя:
-          <input class="form__input_name" id="input_name" type="text" name="name" placeholder="Представтесь, пожалуйста">
         </label>
-        <label class="form__email" for="input_email">
+        <input class="form-write-us__input" id="input-name" type="text" name="name" placeholder="Имя Фамилия">
+        <label class="form-write-us__label" for="input-email">
           Ваш e-mail:
-          <input class="form__input_email" id="input_email" type="text" name="email" placeholder="Для отправки ответа">
         </label>
-        <label class="form__letter" for="input_letter">
+        <input class="form-write-us__input" id="input-email" type="text" name="email" placeholder="email@example.com">
+        <label class="form-write-us__label" for="input-letter">
           Текст письма:
-          <textarea name="form__input_letter" id="input_letter" placeholder="В свободной форме"></textarea>
         </label>
-        <button class="form__btn btn" type="submit">Отправить</button>
+        <textarea name="form-write-us__input" id="input-letter" placeholder="В свободной форме"></textarea>
+        <button class="form-write-us__btn btn" type="submit">Отправить</button>
       </form>
     </div>
-    <div class="modal-map" id="yandex-map">
+    <div class="modal modal-map">
       <button class="modal-close" type="button">Закрыть</button>
       <!--Большая карта-->
     </div> 
