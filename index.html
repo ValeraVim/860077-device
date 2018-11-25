@@ -29,7 +29,7 @@
         <ul class="site-header__menu menu">
           <li class="menu__item">
             <a class="menu__link" href="#">Каталог товаров</a>
-            <ul class="memu__sub-menu sub-menu">
+            <ul class="menu__sub-menu sub-menu">
               <li class="sub-menu__item">
                 <a class="sub-menu__link" href="#">Виртуальная реальность</a>
               </li>
@@ -64,16 +64,21 @@
     </header>
     <main class="site-main">
       <section class="slider">
-        <form class="slider-switch">
-            <label class="slider-switch__label visually-hidden" for="first-slide">Первый слайд</label>
+        <div class="slider-switch">
+            <label class="slider-switch__label" for="first-slide">
+              <span class="visually-hidden">Первый слайд</span>
+            </label>
             <input class="slider-switch__radio" type="radio"  name="slide" id="first-slide">
-            <label class="slider-switch__label visually-hidden" for="second-slide">Второй слайд</label>            
+            <label class="slider-switch__label" for="second-slide">
+              <span class="visually-hidden">Второй слайд</span>
+            </label>            
             <input class="slider-switch__radio" type="radio"  name="slide" id="second-slide">
-            <label class="slider-switch__label visually-hidden" for="third-slide">Третий слайд</label>
+            <label class="slider-switch__label" for="third-slide">
+              <span class="visually-hidden">Третий слайд</span>
+            </label>
             <input class="slider-switch__radio" type="radio"  name="slide" id="third-slide">
-        </form>
+          </div>
         <section class="slider__item slider__item_1">
-          <!--Здесь должен быть переключатель слайдера, но я пока не придумала, как его реализовать-->
           <img class="slider__img" src="img/slide_selfie-stick.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
           <div class="slider__description">
             <h2 class="slider__title">
@@ -329,7 +334,7 @@
     </footer>
     <div class="modal modal_write-us">
       <button class="modal__close">Закрыть</button>
-      <form class="form-write-us" action="" method="post">
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
         <label class="form-write-us__label" for="input-name">
           Ваше имя:
         </label>
@@ -345,7 +350,7 @@
         <button class="form-write-us__btn btn" type="submit">Отправить</button>
       </form>
     </div>
-    <div class="modal modal-map">
+    <div class="modal modal_map">
       <button class="modal-close" type="button">Закрыть</button>
       <!--Большая карта-->
     </div> 
