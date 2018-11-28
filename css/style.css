@@ -1,91 +1,93 @@
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url('10871-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-family: "gilroyextrabold";
+  font-style: normal;
+
+  src: url("10871-webfont.woff2") format("woff2");
 }
 
 body {
-    margin: 0;
+  margin: 0;
 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    color: rgb(1, 1, 1);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 2;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(1, 1, 1);
+  letter-spacing: 0.2px;
 
-    background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 a {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
 .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
 
 .site-header {
-    background-color: rgba(240, 197, 46, 0.5);
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .site-header__logo {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 36px;
-    font-weight: 800;   
-    text-transform: uppercase;
+  font-weight: 800;
+  font-size: 36px;
+  font-family: "Gilroy", sans-serif;
+  text-transform: uppercase;
 }
 
 .site-header__logo:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .site-header__logo:focus {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
-.form-search__input{
-    opacity: 0.3;
-    border: none;
-    background-color: transparent;
+.form-search__input {
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
 }
 
 
-.form-search__input:hover{
-    opacity: 0.6;
+.form-search__input:hover {
+  opacity: 0.6;
 }
 
 .form-search__input:focus {
-    outline: none;
-    opacity: 1;
+  outline: none;
+  opacity: 1;
 }
 
 /* Не могу понять, что за четверное состояние, 
 во время которого появляется фон*/
 
 .form-search__btn {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .form-search__input:focus + .form-search__btn {
-    visibility: visible;
-    
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 
-    border: 2px solid rgb(0, 0, 0);
-    background-color: transparent;
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  visibility: visible;
 }
 
 .form-search__input:focus + .form-search__btn:hover {
-    visibility: visible;
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 
-    background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  visibility: visible;
 }
 
 /* Пока не понимаю, почему не работает
@@ -98,295 +100,295 @@ a {
 */
 
 .user-block__item {
-    list-style: none;
+  list-style: none;
 }
 
 .user-block__link {
-    color: rgb(0, 0, 0); 
+  color: rgb(0, 0, 0);
 }
 
 .user-block__link:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .user-block__link:focus {
-    color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .menu__item {
-    list-style: none;
+  list-style: none;
 }
 
 .menu__link {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
-    letter-spacing: 3.6px;
-    color: rgba(0, 0, 0, 1);
-    text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: "Gilroy", sans-serif;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .menu__link:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .menu__link:focus {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 .sub-menu {
-    display: none;
+  display: none;
 }
 .menu__link:hover + .sub-menu {
-    display: inline;
+  display: inline;
 }
 
 .sub-menu__item {
-    list-style: none;
+  list-style: none;
 }
 
 .sub-menu__link {
-    line-height: 2.4;
-    letter-spacing: 0.2px;
-    color: rgba(0, 0, 0, 1);
+  line-height: 2.4;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.2px;
 }
 
-.sub-menu__link:hover{
-    opacity: 0.6;
+.sub-menu__link:hover {
+  opacity: 0.6;
 }
 
-.sub-menu__link:focus{
-    opacity: 0.3;
+.sub-menu__link:focus {
+  opacity: 0.3;
 }
 
 .slider__title {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 47.5px;
-    font-weight: 800;
-    line-height: 1.18;
-    letter-spacing: 0.5px;
+  font-weight: 800;
+  font-size: 47.5px;
+  line-height: 1.18;
+  font-family: "Gilroy", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .slider__text {
-    color:rgba(70, 70, 70, 1);
+  color: rgba(70, 70, 70, 1);
 }
 
 .btn {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 18.5px;
-    font-weight: 800;
-    line-height: 1.27;
-    letter-spacing: 3.7px;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18.5px;
+  line-height: 1.27;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 3.7px;
 }
 
-.btn:hover{
-    opacity: 1;
+.btn:hover {
+  opacity: 1;
 }
 
 .btn:focus {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
- .slider__table-cell {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 36px;
-    line-height: 1.33;
-    letter-spacing: 0.4px;
- }
+.slider__table-cell {
+  font-size: 36px;
+  line-height: 1.33;
+  font-family: "Gilroy", sans-serif;
+  letter-spacing: 0.4px;
+}
 
- .slider__table-cell_head {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 1.54;
-    letter-spacing: 0.1px;
-    color:rgba(70, 70, 70, 1);
- }
-.product-type__item{
-    list-style: none;
+.slider__table-cell_head {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.54;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(70, 70, 70, 1);
+  letter-spacing: 0.1px;
+}
+.product-type__item {
+  list-style: none;
 }
 
 .product-type__link {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
-    letter-spacing: 0.2px;
-    color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.2px;
 }
 
 .product-type__link:focus {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .product-type__link:focus .product-type__img {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
- .product-type__wrap {
-    width: 160px;
-    height: 160px;
+.product-type__wrap {
+  width: 160px;
+  height: 160px;
 
-    background-color: rgba(240, 197, 46, 0.5);
- }
+  background-color: rgba(240, 197, 46, 0.5);
+}
 
- .product-type__wrap:hover,
- .product-type__wrap:focus {
-    background-color: rgba(240, 197, 46, 1);
- }
+.product-type__wrap:hover,
+.product-type__wrap:focus {
+  background-color: rgba(240, 197, 46, 1);
+}
 
 .services {
-    background-color: rgba(229, 229, 229, 1);
+  background-color: rgba(229, 229, 229, 1);
 }
 
 .services-tabs-bar__item {
-    list-style: none;
+  list-style: none;
 }
 
 .services-tabs-bar__btn:focus {
-    color: rgba(247, 225, 132, 1);
+  color: rgba(247, 225, 132, 1);
 }
 
 .services-tabs__title {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 47.5px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: 0.5px;
+  font-weight: 800;
+  font-size: 47.5px;
+  line-height: 1;
+  font-family: "Gilroy", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .services-tabs__description {
-    color:rgba(70, 70, 70, 1);
+  color: rgba(70, 70, 70, 1);
 }
 
 .partners-list__item {
-    list-style: none;
+  list-style: none;
 }
 .partners-list__img {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .partners-list__link .partners-list__img_color {
-    display: none;
+  display: none;
 }
 
 .partners-list__link:hover .partners-list__img {
-    display: none;
+  display: none;
 }
 
 .partners-list__link:hover .partners-list__img_color {
-    display: inline;
+  display: inline;
 }
 
 .title {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 47.5px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: 0.5px;
+  font-weight: 800;
+  font-size: 47.5px;
+  line-height: 1;
+  font-family: "Gilroy", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .about-company__content {
-    color:rgb(70, 70, 70);
+  color: rgb(70, 70, 70);
 }
 
 .list__item {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 2.5;
-    list-style: none;
+  list-style: none;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 2.5;
+  font-family: "Gilroy", sans-serif;
 }
 
 .site-footer {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 
-    background-color:rgb(70, 70, 70);
+  background-color: rgb(70, 70, 70);
 }
 
 .site-footer__logo {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 36px;
-    font-weight: 800;   
-    text-transform: uppercase;
-    color: rgb(240, 197, 46);
+  font-weight: 800;
+  font-size: 36px;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(240, 197, 46);
+  text-transform: uppercase;
 }
 
 .site-footer__logo:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .site-footer__logo:focus {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .site-footer__phone {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .footer-user-block__item {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-user-block__link {
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-user-block__link:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .footer-user-block__link:focus {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .site-footer__user-block__link {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .site-footer__menu__link:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .footer-menu__item {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-menu__link {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .footer-menu__link:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .footer-menu__link:focus {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .socials__item {
-    list-style: none;
+  list-style: none;
 }
 
 .socials__img {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 .socials__img:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .socials__img:focus {
-    opacity: 0.1;
+  opacity: 0.1;
 }
 
 .modal {
-    display: none;
+  display: none;
 }
