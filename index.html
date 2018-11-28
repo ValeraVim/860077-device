@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Device</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <!--Бонусное чтобы закрыть-->
     <header class="site-header"> 
       <nav class="site-header__nav">
         <a class="site-header__logo">Device</a>
@@ -13,8 +15,8 @@
           <label class="form-search__label" for="search">
             <img class="form-search__icon" src="img/search-icon.svg" alt="Иконка поиска">
           </label>
-          <input class="form-search__input" type="search" name="search" id="search" placeholder="Поиск по сайту" value="Поиск по сайту">
-          <button class="form-search__btn">Найти</button>
+          <input class="form-search__input" type="text" name="search" id="search" placeholder="Поиск по сайту" value="Поиск по сайту">
+          <button class="form-search__btn" type="submit" >Найти</button>
         </form>
         <ul class="site-header__user-block user-block">
           <li class="user-block__item">
@@ -150,7 +152,7 @@
           <li class="product-type__item">
             <a class="product-type__link" href="#">
               <div class="product-type__wrap">
-                <img class="product-type__img" src="img/virtual" width="97" height="55" alt="Иконка 'Виртуальная реальность'">
+                <img class="product-type__img" src="img/virtual-icon.svg" width="97" height="55" alt="Иконка 'Виртуальная реальность'">
               </div>
               Виртуальная реальность
             </a>
@@ -158,7 +160,7 @@
           <li class="product-type__item">
             <a class="product-type__link" href="inner.html">
               <div class="product-type__wrap">
-                <img class="product-type__img" src="img/monopods" width="87" height="117" alt="Иконка 'Монопод'">
+                <img class="product-type__img" src="img/monopods-icon.svg" width="87" height="117" alt="Иконка 'Монопод'">
               </div>
               Моноподы для селфи 
             </a>
@@ -166,7 +168,7 @@
           <li class="product-type__item">
             <a class="product-type__link" href="#">
               <div class="product-type__wrap">
-               <img class="product-type__img" src="img/cameras" width="72" height="88" alt="Иконка 'Камера'">
+               <img class="product-type__img" src="img/cameras-icon.svg" width="72" height="88" alt="Иконка 'Камера'">
               </div>
               Экшн-камеры 
             </a>
@@ -174,7 +176,7 @@
         <li class="product-type__item">
         <a class="product-type__link" href="#">
             <div class="product-type__wrap">
-              <img class="product-type__img" src="img/bracelets" width="97" height="55" alt="Иконка 'Фитнесc-браслет'">
+              <img class="product-type__img" src="img/bracelets-icon.svg" width="97" height="55" alt="Иконка 'Фитнесc-браслет'">
             </div>
             Фитнес-браслеты
         </a>
@@ -182,7 +184,7 @@
         <li class="product-type__item">
           <a class="product-type__link" href="#">
             <div class="product-type__wrap">
-              <img class="product-type__img" src="img/watch" width="57" height="98" alt="Иконка 'Умные часы'">
+              <img class="product-type__img" src="img/watch-icon.svg" width="57" height="98" alt="Иконка 'Умные часы'">
             </div>
             Умные часы
           </a>
@@ -190,7 +192,7 @@
         <li class="product-type__item">
           <a class="product-type__link" href="#">
             <div class="product-type__wrap">
-              <img class="product-type__img" src="img/quadcopters" width="133" height="70" alt="Иконка 'Квадрокоптер'">
+              <img class="product-type__img" src="img/quadcopters-icon.svg" width="133" height="70" alt="Иконка 'Квадрокоптер'">
             </div>
             Квадрокоптеры
           </a>
@@ -200,16 +202,16 @@
       <section class="services">
         <ul class="services-tabs-bar ">
           <li class="services-tabs-bar__item">
-            <a class="services-tabs-bar__btn btn">
-               Доставка
+            <a class="services-tabs-bar__btn btn" href="#">
+              Доставка
             </a>
           </li>
-          <li class="services-tabs-bar__item">
+          <li class="services-tabs-bar__item" href="#">
             <a class="services-tabs-bar__btn btn">
               Гарантия
             </a>
           </li>
-          <li class="services-tabs-bar__item">
+          <li class="services-tabs-bar__item" href="#">
             <a class="services-tabs-bar__btn btn">
               Кредит
             </a>
@@ -242,27 +244,27 @@
       <section class="partners">
         <ul class="partners-list">
           <li class="partners-list__item">
-            <a class="partners-list__link" href="http://www.dji.com/">
+            <a class="partners-list__link" href="#">
               <img class="partners-list__img" src="img/dji-logo_gray.jpg" width="260" height="100" alt="Логотип DjI">
-              <img class="partners-list__img partners-list__img_color" src="img/dji-logo_color.jpg" width="260" height="100" alt="Логотип DjI">
+              <img class="partners-list__img_color" src="img/dji-logo_color.jpg" width="260" height="100" alt="Логотип DjI">
             </a>
           </li>
           <li class="partners-list__item">
-              <a class="partners-list__link" href="http://www.sp-gadgets.com/">
+              <a class="partners-list__link" href="#">
                 <img class="partners-list__img" src="img/sp-gadgets-logo_gray.jpg" width="260" height="100" alt="Логотип Sp-Gadgets">
-                <img class="partners-list__img partners-list__img_color" src="img/sp-gadgets-logo_color.jpg" width="260" height="100" alt="Логотип Sp-Gadgets">
+                <img class="partners-list__img_color" src="img/sp-gadgets-logo_color.jpg" width="260" height="100" alt="Логотип Sp-Gadgets">
               </a>
           </li>
           <li class="partners-list__item">
-              <a class="partners-list__link" href="http://www.gopro.ru/">
+              <a class="partners-list__link" href="#">
                 <img class="partners-list__img" src="img/gopro-logo_gray.jpg" width="260" height="100" alt="Логотип GoPro">
-                <img class="partners-list__img partners-list__img_color" src="img/gopro-logo_color.jpg" width="260" height="100" alt="Логотип GoPro">
+                <img class="partners-list__img_color" src="img/gopro-logo_color.jpg" width="260" height="100" alt="Логотип GoPro">
               </a>
           </li>
           <li class="partners-list__item">
-              <a class="partners-list__link" href="http://www.htcvive.com/">
+              <a class="partners-list__link" href="#">
                 <img class="partners-list__img" src="img/vive-logo_gray.jpg" width="260" height="100" alt="Логотип Vive">
-                <img class="partners-list__img partners-list__img_color" src="img/vive-logo_color.jpg" width="260" height="100" alt="Логотип Vive">
+                <img class="partners-list__img_color" src="img/vive-logo_color.jpg" width="260" height="100" alt="Логотип Vive">
               </a>
           </li>
         </ul>
@@ -292,26 +294,26 @@
         <a class="site-footer__logo">Device</a>
         <p class="site-footer__address">г.Москва, ул.Строителей, 15</p>
         <a class="site-footer__phone" href="tel:+74954959595"> Тел: +7(495)495-95-95</a>
-        <ul class="site-footer__user-block user-block">
-          <li class="user-block__item">
-            <a class="user-block__link user-block__link_login" href="#">Войти</a>
+        <ul class="site-footer__footer-user-block footer-user-block">
+          <li class="footer-user-block__item">
+            <a class="footer-user-block__link footer-user-block__link_login" href="#">Войти</a>
           </li>
-          <li class="user-block__item">
-             <a class="user-block__link user-block__link_compare" href="#">Сравнить</a>
+          <li class="footer-user-block__item">
+             <a class="footer-user-block__link footer-user-block__link_compare" href="#">Сравнить</a>
           </li>
-          <li class="user-block__item">
-            <a class="user-block__link user-block__link_basket" href="#">Корзина</a>
+          <li class="footer-user-block__item">
+            <a class="footer-user-block__link footer-user-block__link_basket" href="#">Корзина</a>
           </li>
         </ul>
-        <ul class="site-footer__menu menu">
-          <li class="menu__item">
-            <a class="menu__link" href="#">Доставка</a>
+        <ul class="site-footer__footer-menu footer-menu">
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Доставка</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Гарантия</a>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Гарантия</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="site-footer__socials socials">
@@ -332,6 +334,7 @@
           </li>
         </ul>
       </nav>
+      <img class="icon-html-academy" src="img/">
     </footer>
     <div class="modal modal_write-us">
       <button class="modal__close">Закрыть</button>
