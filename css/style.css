@@ -376,8 +376,6 @@ a {
     opacity: 0.1;
 }
 
-
-/* Внутренняя
 .site-main__title {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
@@ -406,8 +404,7 @@ a {
     opacity: 0.1;
  }
 
- .sorting__title,
- .filter__title {
+ .sorting__title {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 17.5px;
@@ -435,7 +432,68 @@ a {
 .sorting__link:active {
      opacity: 1;
 }
+
+.catalog-filter__title {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 17.5px;
+    line-height: 25.5px;
+    letter-spacing: 3.5px;
+ }
+
+.filter__title {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+
+.filter__label {
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.14px;
+}
+
+.card-product__description {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    color: #000000;
+}
+
+.card-product__price {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+
+.catalog-nav__btn {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    color: #000000;
+}
+
+.catalog-nav__pagination {
+    list-style: none;
+}
+
+.catalog-nav__pagination-link {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    color: #000000;
+}
+
 .modal {
     display: none;
 }
-*/
