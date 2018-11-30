@@ -264,7 +264,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.title {
+.info-company__title {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 47.5px;
     line-height: 47.5px;
@@ -279,7 +279,7 @@ a {
 .about-company__list {
     list-style: none;
 }
-.list__item {
+.about-company__item {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 16px;
     line-height: 40px;
@@ -372,24 +372,61 @@ a {
     opacity: 0.1;
 }
 
-.site-main__title{
+.site-main__title {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 47.5px;
-    font-style: normal;
     font-stretch: normal;
     line-height: 47.5px;
     letter-spacing: 0.5px;
     color: #000000;
 }
 
-.breadscrumbs__item {
+.breadscrumbs__list {
     list-style: none;
 }
 
 .breadscrumbs__link {
-    
+    font-size: 14px;
+    color: #000000;
+    opacity: 0.3;
 }
 
+.breadscrumbs__link:hover {
+   opacity: 0.6;
+}
+
+.breadscrumbs__link:active {
+    opacity: 0.1;
+ }
+
+ .sorting__title,
+ .filter__title {
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 17.5px;
+    font-stretch: normal;
+    line-height: 25.5px;
+    letter-spacing: 3.5px;
+    color: #000000;
+ }
+
+ .sorting__list {
+     list-style: none;
+ }
+
+ .sorting__link {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #000000;
+    opacity: 0.3;
+ }
+
+ .sorting__link:hover {
+     opacity: 0.6;
+}
+.sorting__link:active {
+     opacity: 1;
+}
 .modal {
     display: none;
 }
