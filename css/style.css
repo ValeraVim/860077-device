@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "Gilroy ExtraBold";
+    font-family: "Gilroy";
     src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 800;
+    font-style: bold;
 }
 
 @font-face {
-    font-family: 'Gilroy Light';
+    font-family: "Gilroy";
     src: url('../fonts/gilroy-light-webfont.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 
 }
@@ -32,12 +32,12 @@ a {
 
 .btn,
 .btn:hover {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18.5px;
     font-weight: 800;
     line-height: 24px;
-    letter-spacing: 3.6px;
-    color: rgb(0, 0, 0);
+    letter-spacing: 3.7px;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -127,7 +127,7 @@ a {
 }
 
 .menu__link {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -163,7 +163,7 @@ a {
 }
 
 .slider__title {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 47.5px;
     font-weight: 800;
     line-height: 56px;
@@ -175,7 +175,8 @@ a {
 }
 
 .slider__table-cell {
-    font-family: "Gilroy Light", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 300;
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 0.4px;
@@ -189,13 +190,13 @@ a {
     letter-spacing: 0.13px;
     color:rgba(70, 70, 70, 1);
  }
-.product-type__item {
+.product-type__list {
     list-style: none;
 }
 
 .product-type__link,
 .product-type__link:hover {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -216,11 +217,11 @@ a {
 
 .product-type__wrap:hover,
 .product-type__wrap:active {
-    background-color: rgba(240, 197, 46, 1);
+    background-color: #f0c52e;
  }
 
 .product-type__link:hover .product-type__wrap {
-    background-color: rgba(240, 197, 46, 1); 
+    background-color: #f0c52e; 
  }
 
 .product-type__link:active .product-type__img {
@@ -244,10 +245,10 @@ a {
 }
 
 .services-tabs__title {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 47.5px;
     font-weight: 800;
-    line-height: 0.48px;
+    line-height: 47.5 px;
     letter-spacing: 0.5px;
 }
 
@@ -265,10 +266,11 @@ a {
 }
 
 .info-company__title {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
     font-size: 47.5px;
     line-height: 47.5px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.5px;
 }
 
 .about-company__content {
@@ -280,7 +282,8 @@ a {
     list-style: none;
 }
 .about-company__item {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
     font-size: 16px;
     line-height: 40px;
     letter-spacing: normal;
@@ -334,7 +337,8 @@ a {
 }
 
 .footer-menu__link {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 3.6px;
@@ -372,8 +376,11 @@ a {
     opacity: 0.1;
 }
 
+
+/* Внутренняя
 .site-main__title {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
     font-size: 47.5px;
     font-stretch: normal;
     line-height: 47.5px;
@@ -401,7 +408,8 @@ a {
 
  .sorting__title,
  .filter__title {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
     font-size: 17.5px;
     font-stretch: normal;
     line-height: 25.5px;
@@ -430,3 +438,4 @@ a {
 .modal {
     display: none;
 }
+*/
