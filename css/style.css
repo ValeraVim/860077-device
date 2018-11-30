@@ -1,26 +1,49 @@
 @font-face {
     font-family: "Gilroy ExtraBold";
-    src: url('fonts/gilroy-extrabold-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body {
     margin: 0;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
-    line-height: 2;
-    letter-spacing: 0.2px;
-    color: rgb(1, 1, 1);
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    color: #000000;;
 
-    background-color:rgb(255, 255, 255);
+    background-color:#ffffff;;
 }
 
 a {
     text-decoration: none;
   }
+
+.btn,
+.btn:hover {
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 18.5px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.6px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.btn:active {
+    opacity: 0.3;
+}
 
 .visually-hidden {
     position: absolute;
@@ -34,39 +57,27 @@ a {
     background-color: rgba(240, 197, 46, 0.5);
 }
 
-.site-header__logo {
-    font-family:
-    font-size: 36px;
-    font-weight: 800;   
-    text-transform: uppercase;
-}
-
 .site-header__logo:hover {
     opacity: 0.6;
 }
 
-.site-header__logo:focus {
+.site-header__logo:active {
     opacity: 0.3;
 }
 
-.form-search__input{
-    opacity: 0.3;
+.form-search__input,
+.form-search__input:hover {
     border: none;
     background-color: transparent;
 }
 
-
-.form-search__input:hover{
-    opacity: 0.6;
-}
-
 .form-search__input:focus {
     outline: none;
-    opacity: 1;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
 }
 
-/* Не могу понять, что за четверное состояние, 
-во время которого появляется фон*/
+/* Тут должны быть состояния placeholder*/
 
 .form-search__btn {
     visibility: hidden;
@@ -75,45 +86,43 @@ a {
 .form-search__input:focus + .form-search__btn {
     visibility: visible;
     
-    color: rgb(0, 0, 0);
+    color: #000000;
 
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid #000000;
     background-color: transparent;
 }
 
 .form-search__input:focus + .form-search__btn:hover {
     visibility: visible;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 }
 
-/* Пока не понимаю, почему не работает
-.form-search__btn:focus {
+.form-search__btn:active {
     visibility: visible;
     color: rgba(255, 255, 255, 0.3);
 
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 }
-*/
 
-.user-block__item {
+.site-header__user-block {
     list-style: none;
 }
 
 .user-block__link {
-    color: rgb(0, 0, 0); 
+    color: #000000; 
 }
 
 .user-block__link:hover {
     opacity: 0.6;
 }
 
-.user-block__link:focus {
-    color: rgba(0, 0, 0, 0.3);
+.user-block__link:active {
+    opacity: 0.3;
 }
 
-.menu__item {
+.site-header__menu {
     list-style: none;
 }
 
@@ -121,9 +130,9 @@ a {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.33;
+    line-height: 24px;
     letter-spacing: 3.6px;
-    color: rgba(0, 0, 0, 1);
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -131,23 +140,17 @@ a {
     opacity: 0.6;
 }
 
-.menu__link:focus {
+.menu__link:active {
     opacity: 0.3;
 }
-.sub-menu {
-    display: none;
-}
-.menu__link:hover + .sub-menu {
-    display: inline;
-}
 
-.sub-menu__item {
+.menu__sub-menu {
     list-style: none;
 }
 
 .sub-menu__link {
-    line-height: 2.4;
-    letter-spacing: 0.2px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
     color: rgba(0, 0, 0, 1);
 }
 
@@ -155,7 +158,7 @@ a {
     opacity: 0.6;
 }
 
-.sub-menu__link:focus{
+.sub-menu__link:active {
     opacity: 0.3;
 }
 
@@ -163,170 +166,146 @@ a {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 47.5px;
     font-weight: 800;
-    line-height: 1.18;
-    letter-spacing: 0.5px;
+    line-height: 56px;
+    letter-spacing: 0.48px;
 }
 
 .slider__text {
-    color:rgba(70, 70, 70, 1);
+    color:#464646;
 }
 
-.btn {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-    font-size: 18.5px;
-    font-weight: 800;
-    line-height: 1.27;
-    letter-spacing: 3.7px;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-}
-
-.btn:hover{
-    opacity: 1;
-}
-
-.btn:focus {
-    opacity: 0.3;
-}
-
- .slider__table-cell {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+.slider__table-cell {
+    font-family: "Gilroy Light", "Arial", sans-serif;
     font-size: 36px;
-    line-height: 1.33;
+    line-height: 48px;
     letter-spacing: 0.4px;
  }
 
- .slider__table-cell_head {
-    font-family:  'Open Sans', sans-serif;
+.slider__table-cell_head {
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: 300;
-    line-height: 1.54;
-    letter-spacing: 0.1px;
+    line-height: 20px;
+    letter-spacing: 0.13px;
     color:rgba(70, 70, 70, 1);
  }
-.product-type__item{
+.product-type__item {
     list-style: none;
 }
 
-.product-type__link {
+.product-type__link,
+.product-type__link:hover {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.33;
-    letter-spacing: 0.2px;
-    color: rgb(0, 0, 0);
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    color: #000000;
 }
 
-.product-type__link:focus {
+.product-type__link:active {
     opacity: 0.3;
 }
 
-.product-type__link:focus .product-type__img {
-    opacity: 0.3;
-}
-
- .product-type__wrap {
+.product-type__wrap {
     width: 160px;
     height: 160px;
 
     background-color: rgba(240, 197, 46, 0.5);
  }
 
- .product-type__wrap:hover,
- .product-type__wrap:focus {
+.product-type__wrap:hover,
+.product-type__wrap:active {
     background-color: rgba(240, 197, 46, 1);
  }
 
-.services {
-    background-color: rgba(229, 229, 229, 1);
+.product-type__link:hover .product-type__wrap {
+    background-color: rgba(240, 197, 46, 1); 
+ }
+
+.product-type__link:active .product-type__img {
+    opacity: 0.3;
 }
 
-.services-tabs-bar__item {
+.services {
+    background-color: #e5e5e5;
+}
+
+.services-tabs-bar {
     list-style: none;
 }
 
-.services-tabs-bar__btn:focus {
-    color: rgba(247, 225, 132, 1);
+.services-tabs-bar__btn,
+.services-tabs-bar__btn:hover {
+    color: #000000;
+}
+.services-tabs-bar__btn:active {
+    color: #f7e184;
 }
 
 .services-tabs__title {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 47.5px;
     font-weight: 800;
-    line-height: 1;
+    line-height: 0.48px;
     letter-spacing: 0.5px;
 }
 
 .services-tabs__description {
-    color:rgba(70, 70, 70, 1);
+    color:#464646;
 }
 
-.partners-list__item {
+.partners-list {
     list-style: none;
 }
-.partners-list__img {
-    opacity: 0.2;
-}
 
-.partners-list__link .partners-list__img_color {
-    display: none;
-}
-
-.partners-list__link:hover .partners-list__img {
-    display: none;
-}
-
-.partners-list__link:hover .partners-list__img_color {
-    display: inline;
+.partners-list__link_gji {
+    background-image: url(../img/dji-logo_gray.jpg);
+    background-repeat: no-repeat;
 }
 
 .title {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 47.5px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: 0.5px;
+    line-height: 47.5px;
+    letter-spacing: 0.48px;
 }
 
 .about-company__content {
-    color:rgb(70, 70, 70);
+    letter-spacing: normal;
+    color:#464646;
 }
 
+.about-company__list {
+    list-style: none;
+}
 .list__item {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 16px;
-    font-weight: 800;
-    line-height: 2.5;
-    list-style: none;
+    line-height: 40px;
+    letter-spacing: normal;
 }
 
 .site-footer {
-    color: rgb(255, 255, 255);
+    letter-spacing: normal;
+    color: #e5e5e5;
 
-    background-color:rgb(70, 70, 70);
-}
-
-.site-footer__logo {
-    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-    font-size: 36px;
-    font-weight: 800;   
-    text-transform: uppercase;
-    color: rgb(240, 197, 46);
+    background-color:#464646;
 }
 
 .site-footer__logo:hover {
     opacity: 0.6;
 }
 
-.site-footer__logo:focus {
+.site-footer__logo:active {
     opacity: 0.3;
 }
 
 .site-footer__phone {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
-.footer-user-block__item {
+.footer-user-block {
     list-style: none;
 }
 
@@ -335,30 +314,29 @@ a {
 }
 
 .footer-user-block__link:hover {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
-.footer-user-block__link:focus {
+.footer-user-block__link:active {
     opacity: 0.6;
 }
 
 .site-footer__user-block__link {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .site-footer__menu__link:hover {
     opacity: 0.6;
 }
 
-.footer-menu__item {
+.footer-menu {
     list-style: none;
 }
 
 .footer-menu__link {
     font-family: "Gilroy ExtraBold", "Arial", sans-serif;
     font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
+    line-height: 24px;
     letter-spacing: 3.6px;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -368,11 +346,18 @@ a {
     opacity: 0.6;
 }
 
-.footer-menu__link:focus {
+.footer-menu__link:active {
     opacity: 0.3;
 }
 
-.socials__item {
+.icon-html-academy:hover {
+    opacity: 0.6;
+}
+
+.icon-html-academy:active {
+    opacity: 0.3;
+}
+.socials {
     list-style: none;
 }
 
@@ -383,8 +368,26 @@ a {
     opacity: 0.6;
 }
 
-.socials__img:focus {
+.socials__img:active {
     opacity: 0.1;
+}
+
+.site-main__title{
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 47.5px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 47.5px;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.breadscrumbs__item {
+    list-style: none;
+}
+
+.breadscrumbs__link {
+    
 }
 
 .modal {

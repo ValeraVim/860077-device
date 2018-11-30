@@ -10,12 +10,14 @@
   <body>
     <header class="site-header"> 
       <nav class="site-header__nav">
-        <a class="site-header__logo">Device</a>
+        <a class="site-header__logo">
+          <img class="logo" src="img/logo-device.svg" width="164" height="36" alt="Логотип Девайс" >
+        </a>
         <form class="form-search" action="https://echo.htmlacademy.ru" method="GET">
           <label class="form-search__label" for="search">
             <img class="form-search__icon" src="img/search-icon.svg" alt="Иконка поиска">
           </label>
-          <input class="form-search__input" type="text" name="search" id="search" placeholder="Поиск по сайту" value="Поиск по сайту">
+          <input class="form-search__input" type="text" name="search" id="search" placeholder="Поиск по сайту">
           <button class="form-search__btn" type="submit" >Найти</button>
         </form>
         <ul class="site-header__user-block user-block">
@@ -206,13 +208,13 @@
               Доставка
             </a>
           </li>
-          <li class="services-tabs-bar__item" href="#">
-            <a class="services-tabs-bar__btn btn">
+          <li class="services-tabs-bar__item">
+            <a class="services-tabs-bar__btn btn"  href="#">
               Гарантия
             </a>
           </li>
-          <li class="services-tabs-bar__item" href="#">
-            <a class="services-tabs-bar__btn btn">
+          <li class="services-tabs-bar__item">
+            <a class="services-tabs-bar__btn btn" href="#">
               Кредит
             </a>
           </li>
@@ -244,27 +246,23 @@
       <section class="partners">
         <ul class="partners-list">
           <li class="partners-list__item">
-            <a class="partners-list__link" href="#">
-              <img class="partners-list__img" src="img/dji-logo_gray.jpg" width="260" height="100" alt="Логотип DjI">
-              <img class="partners-list__img_color" src="img/dji-logo_color.jpg" width="260" height="100" alt="Логотип DjI">
+            <a class="partners-list__link partners-list__link_gji" href="#">
+              <span class="visually-hidden">DjI</span>
             </a>
           </li>
           <li class="partners-list__item">
-              <a class="partners-list__link" href="#">
-                <img class="partners-list__img" src="img/sp-gadgets-logo_gray.jpg" width="260" height="100" alt="Логотип Sp-Gadgets">
-                <img class="partners-list__img_color" src="img/sp-gadgets-logo_color.jpg" width="260" height="100" alt="Логотип Sp-Gadgets">
+              <a class="partners-list__link partners-list__link_sp-gadgets" href="#">
+                <span class="visually-hidden">Sp-gadgets</sp-gadgets></span>
               </a>
           </li>
           <li class="partners-list__item">
-              <a class="partners-list__link" href="#">
-                <img class="partners-list__img" src="img/gopro-logo_gray.jpg" width="260" height="100" alt="Логотип GoPro">
-                <img class="partners-list__img_color" src="img/gopro-logo_color.jpg" width="260" height="100" alt="Логотип GoPro">
-              </a>
+              <a class="partners-list__link partners-list__link_gopro" href="#">
+                <span class="visually-hidden">GoPro</span>
+              </a> 
           </li>
           <li class="partners-list__item">
-              <a class="partners-list__link" href="#">
-                <img class="partners-list__img" src="img/vive-logo_gray.jpg" width="260" height="100" alt="Логотип Vive">
-                <img class="partners-list__img_color" src="img/vive-logo_color.jpg" width="260" height="100" alt="Логотип Vive">
+              <a class="partners-list__link partners-list__link_vive" href="#">
+                <span class="visually-hidden">Vive</span>
               </a>
           </li>
         </ul>
@@ -291,7 +289,11 @@
     </main>
     <footer class="site-footer">
      <nav class="site-footer__nav">
-        <a class="site-footer__logo">Device</a>
+        <a class="site-footer__logo">
+          <a class="site-header__logo">
+            <img class="logo" src="img/logo-device_yellow.svg" width="164" height="36" alt="Логотип Девайс" >
+          </a> 
+        </a>
         <p class="site-footer__address">г.Москва, ул.Строителей, 15</p>
         <a class="site-footer__phone" href="tel:+74954959595"> Тел: +7(495)495-95-95</a>
         <ul class="site-footer__footer-user-block footer-user-block">
