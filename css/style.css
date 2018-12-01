@@ -2,15 +2,12 @@
     font-family: "Gilroy";
     src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2');
     font-weight: 800;
-    font-style: bold;
 }
 
 @font-face {
     font-family: "Gilroy";
     src: url('../fonts/gilroy-light-webfont.woff2') format('woff2');
     font-weight: 300;
-    font-style: normal;
-
 }
 
 body {
@@ -28,10 +25,17 @@ body {
 
 a {
     text-decoration: none;
-  }
+}
 
-.btn,
-.btn:hover {
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.btn {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18.5px;
     font-weight: 800;
@@ -45,14 +49,6 @@ a {
     opacity: 0.3;
 }
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
-
 .site-header {
     background-color: rgba(240, 197, 46, 0.5);
 }
@@ -65,25 +61,33 @@ a {
     opacity: 0.3;
 }
 
-.form-search__input,
-.form-search__input:hover {
+.site-header__search-input {
     border: none;
-    background-color: transparent;
-}
-
-.form-search__input:focus {
     outline: none;
-    border-bottom: 2px solid #000000;
     background-color: transparent;
 }
 
-/* Тут должны быть состояния placeholder*/
+.site-header__search-input:focus {
+    border-bottom: 2px solid #000000;
+}
 
-.form-search__btn {
+::-webkit-input-placeholder {
+    color:rgba(0, 0, 0, 0.3);
+}
+
+:hover::-webkit-input-placeholder {
+    color:rgba(0, 0, 0, 0.6);
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.site-header__search-btn {
     visibility: hidden;
 }
 
-.form-search__input:focus + .form-search__btn {
+.site-header__search-input:focus + .site-header__search-btn {
     visibility: visible;
     
     color: #000000;
@@ -92,14 +96,14 @@ a {
     background-color: transparent;
 }
 
-.form-search__input:focus + .form-search__btn:hover {
-    visibility: visible;
+.site-header__search-input:focus + .site-header__search-btn:hover {
+    
     color: #ffffff;
 
     background-color: #000000;
 }
 
-.form-search__btn:active {
+.site-header__search-btn:active {
     visibility: visible;
     color: rgba(255, 255, 255, 0.3);
 
@@ -122,7 +126,7 @@ a {
     opacity: 0.3;
 }
 
-.site-header__menu {
+.menu {
     list-style: none;
 }
 
@@ -144,7 +148,7 @@ a {
     opacity: 0.3;
 }
 
-.menu__sub-menu {
+.sub-menu {
     list-style: none;
 }
 
