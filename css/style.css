@@ -1,12 +1,14 @@
 @font-face {
     font-family: "Gilroy";
     src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
     font-weight: 800;
 }
 
 @font-face {
     font-family: "Gilroy";
     src: url('../fonts/gilroy-light-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroy-light-webfont.woff') format('woff');
     font-weight: 300;
 }
 
@@ -17,7 +19,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
-    letter-spacing: 0.15px;
+    letter-spacing: 0.01em;
     color: #000000;;
 
     background-color:#ffffff;;
@@ -40,7 +42,7 @@ a {
     font-size: 18.5px;
     font-weight: 800;
     line-height: 24px;
-    letter-spacing: 3.7px;
+    letter-spacing: 0.23em;
     color: #000000;
     text-transform: uppercase;
 }
@@ -50,15 +52,34 @@ a {
 }
 
 .site-header {
-    background-color: rgba(240, 197, 46, 0.5);
+    width: 1440px;
+    margin: 0 auto;
 }
 
-.site-header__logo:hover {
+.site-header__nav {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 25px 60px 0px 60px;
+    background: linear-gradient(to bottom, #ffffff 0px, #ffffff 40px,  rgba(240, 197, 46, 0.5) 40px);
+}
+
+.site-header__nav-continer {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: baseline;
+}
+
+.site-header__logo-link:hover {
     opacity: 0.6;
 }
 
-.site-header__logo:active {
+.site-header__logo-link:active {
     opacity: 0.3;
+}
+
+.site-header__search {
+    width: 440px;
 }
 
 .site-header__search-input {
@@ -111,7 +132,17 @@ a {
 }
 
 .site-header__user-block {
+    display: flex;
+    width: 500px;
     list-style: none;
+}
+
+.site-header__user-item:first-child {
+    margin-right: 238px;
+}
+
+.site-header__user-item:last-child {
+    margin-left: auto;
 }
 
 .site-header__user-link {
@@ -127,7 +158,9 @@ a {
 }
 
 .site-header__menu {
+    display: flex;
     list-style: none;
+    padding: 0px;
 }
 
 .site-header__menu-link {
@@ -135,7 +168,7 @@ a {
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
-    letter-spacing: 3.6px;
+    letter-spacing: 0.23em;
     color: #000000;
     text-transform: uppercase;
 }
@@ -148,13 +181,25 @@ a {
     opacity: 0.3;
 }
 
+.site-header__menu-item:first-child {
+    margin-right: 326px;
+}
+
+.site-header__menu-item:nth-child(2n) {
+    margin-right: 38px;
+}
+
+.site-header__menu-item:last-child {
+    margin-left: auto;
+}
+
 .site-header__sub-menu {
     list-style: none;
+    display: none;
 }
 
 .site-header__sub-menu-link {
     line-height: 36px;
-    letter-spacing: 0.15px;
     color: rgba(0, 0, 0, 1);
 }
 
@@ -171,7 +216,7 @@ a {
     font-size: 47.5px;
     font-weight: 800;
     line-height: 56px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.03em;
 }
 
 .slider__text {
@@ -183,7 +228,7 @@ a {
     font-weight: 300;
     font-size: 36px;
     line-height: 48px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.025em;
  }
 
 .slider__table-cell_head {
@@ -191,20 +236,18 @@ a {
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
-    letter-spacing: 0.13px;
+    letter-spacing: 0.008em;
     color:rgba(70, 70, 70, 1);
  }
 .product-type__list {
     list-style: none;
 }
 
-.product-type__link,
-.product-type__link:hover {
+.product-type__link {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
-    letter-spacing: 0.18px;
     color: #000000;
 }
 
@@ -212,19 +255,19 @@ a {
     opacity: 0.3;
 }
 
-.product-type__wrap {
+.product-type__img-wrap {
     width: 160px;
     height: 160px;
 
     background-color: rgba(240, 197, 46, 0.5);
  }
 
-.product-type__wrap:hover,
-.product-type__wrap:active {
+.product-type__img-wrap:hover,
+.product-type__img-wrap:active {
     background-color: #f0c52e;
  }
 
-.product-type__link:hover .product-type__wrap {
+.product-type__link:hover .product-type__img-wrap {
     background-color: #f0c52e; 
  }
 
@@ -236,27 +279,27 @@ a {
     background-color: #e5e5e5;
 }
 
-.services-tabs-bar {
+.services__tabs-bar {
     list-style: none;
 }
 
-.services-tabs-bar__btn,
-.services-tabs-bar__btn:hover {
+.services__tabs-bar-btn,
+.services__tabs-bar-btn:hover {
     color: #000000;
 }
-.services-tabs-bar__btn:active {
+.services__tabs-bar-btn:active {
     color: #f7e184;
 }
 
-.services-tabs__title {
+.services__tabs-title {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 47.5px;
     font-weight: 800;
     line-height: 47.5 px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03em;
 }
 
-.services-tabs__description {
+.services__tabs-description {
     color:#464646;
 }
 
@@ -269,7 +312,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.info-company__title {
+.about-company__title {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 47.5px;
@@ -285,12 +328,26 @@ a {
 .about-company__list {
     list-style: none;
 }
+
 .about-company__item {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 40px;
     letter-spacing: normal;
+}
+
+.contacts__title {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 47.5px;
+    line-height: 47.5px;
+    letter-spacing: 0.03em;
+}
+
+.contacts__content {
+    letter-spacing: normal;
+    color:#464646;
 }
 
 .site-footer {
@@ -312,49 +369,45 @@ a {
     color: #ffffff;
 }
 
-.footer-user-block {
+.site-footer__user-block {
     list-style: none;
 }
 
-.footer-user-block__link {
+.site-footer__user-link {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-user-block__link:hover {
+.site-footer__user-link:hover {
     color: #ffffff;
 }
 
-.footer-user-block__link:active {
+.site-footer__user-link:active {
     opacity: 0.6;
-}
-
-.site-footer__user-block__link {
-    color: #ffffff;
 }
 
 .site-footer__menu__link:hover {
     opacity: 0.6;
 }
 
-.footer-menu {
+.site-footer__menu {
     list-style: none;
 }
 
-.footer-menu__link {
+.site-footer__menu-link {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 3.6px;
+    letter-spacing: 0.23em;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
 }
 
-.footer-menu__link:hover {
+.site-footer__menu-link:hover {
     opacity: 0.6;
 }
 
-.footer-menu__link:active {
+.site-footer__menu-link:active {
     opacity: 0.3;
 }
 
@@ -365,18 +418,18 @@ a {
 .icon-html-academy:active {
     opacity: 0.3;
 }
-.socials {
+.site-footer__socials {
     list-style: none;
 }
 
-.socials__img {
+.site-footer__socials-img {
     opacity: 0.3;
 }
-.socials__img:hover {
+.site-footer__socials-img:hover {
     opacity: 0.6;
 }
 
-.socials__img:active {
+.site-footer__socials-img:active {
     opacity: 0.1;
 }
 
@@ -386,7 +439,7 @@ a {
     font-size: 47.5px;
     font-stretch: normal;
     line-height: 47.5px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03em;
     color: #000000;
 }
 
@@ -414,7 +467,7 @@ a {
     font-size: 17.5px;
     font-stretch: normal;
     line-height: 25.5px;
-    letter-spacing: 3.5px;
+    letter-spacing: 0.23em;
     color: #000000;
  }
 
@@ -442,7 +495,7 @@ a {
     font-weight: 800;
     font-size: 17.5px;
     line-height: 25.5px;
-    letter-spacing: 3.5px;
+    letter-spacing: 0.23em;
  }
 
 .filter__title {
@@ -450,13 +503,12 @@ a {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0.18px;
 }
 
 .filter__label {
     font-size: 14px;
     line-height: 40px;
-    letter-spacing: 0.14px;
+    letter-spacing: 0.008em;
 }
 
 .card-product__description {
@@ -464,7 +516,6 @@ a {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0.18px;
     color: #000000;
 }
 
@@ -473,7 +524,6 @@ a {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.16px;
 }
 
 .catalog-nav__btn {
@@ -481,7 +531,7 @@ a {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 3.2px;
+    letter-spacing: 0.2em;
     color: #000000;
 }
 
@@ -494,7 +544,7 @@ a {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 3.2px;
+    letter-spacing: 0.2em;
     color: #000000;
 }
 
