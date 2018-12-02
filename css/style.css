@@ -114,23 +114,23 @@ a {
     list-style: none;
 }
 
-.user-block__link {
+.site-header__user-link {
     color: #000000; 
 }
 
-.user-block__link:hover {
+.site-header__user-link:hover {
     opacity: 0.6;
 }
 
-.user-block__link:active {
+.site-header__user-link:active {
     opacity: 0.3;
 }
 
-.menu {
+.site-header__menu {
     list-style: none;
 }
 
-.menu__link {
+.site-header__menu-link {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -140,29 +140,29 @@ a {
     text-transform: uppercase;
 }
 
-.menu__link:hover {
+.site-header__menu-link:hover {
     opacity: 0.6;
 }
 
-.menu__link:active {
+.site-header__menu-link:active {
     opacity: 0.3;
 }
 
-.sub-menu {
+.site-header__sub-menu {
     list-style: none;
 }
 
-.sub-menu__link {
+.site-header__sub-menu-link {
     line-height: 36px;
     letter-spacing: 0.15px;
     color: rgba(0, 0, 0, 1);
 }
 
-.sub-menu__link:hover{
+.site-header__sub-menu-link:hover{
     opacity: 0.6;
 }
 
-.sub-menu__link:active {
+.site-header__sub-menu-link:active {
     opacity: 0.3;
 }
 
