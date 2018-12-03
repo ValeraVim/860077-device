@@ -71,19 +71,19 @@
     <main class="site-main">
       <section class="site-main__slider slider">
         <div class="slider__switch-wrap">
-            <label class="slider__switch-label" for="first-slide">
-              <span class="visually-hidden">Первый слайд</span>
-            </label>
-            <input class="slider__switch-radio" type="radio"  name="slide" id="first-slide">
-            <label class="slider__switch-label" for="second-slide">
-              <span class="visually-hidden">Второй слайд</span>
-            </label>            
-            <input class="slider__switch-radio" type="radio"  name="slide" id="second-slide">
-            <label class="slider__switch-label" for="third-slide">
-              <span class="visually-hidden">Третий слайд</span>
-            </label>
-            <input class="slider__switch-radio" type="radio"  name="slide" id="third-slide">
-          </div>
+          <label class="slider__switch-label" for="first-slide">
+            <span class="visually-hidden">Первый слайд</span>
+          </label>
+          <input class="slider__switch-radio" type="radio"  name="slide" id="first-slide">
+          <label class="slider__switch-label" for="second-slide">
+            <span class="visually-hidden">Второй слайд</span>
+          </label>            
+          <input class="slider__switch-radio" type="radio"  name="slide" id="second-slide">
+          <label class="slider__switch-label" for="third-slide">
+            <span class="visually-hidden">Третий слайд</span>
+          </label>
+          <input class="slider__switch-radio" type="radio"  name="slide" id="third-slide">
+      </div>
         <section class="slider__item slider__item_1">
           <img class="slider__img" src="img/slide_selfie-stick.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
           <div class="slider__description">
@@ -203,46 +203,50 @@
         </ul>
       </section>
       <section class="services">
-        <ul class="services__tabs-bar">
-          <li class="services__tabs-bar-item">
-            <a class="services__tabs-bar-btn btn" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="services__tabs-bar-item">
-            <a class="services__tabs-bar-btn btn"  href="#">
-              Гарантия
-            </a>
-          </li>
-          <li class="services__tabs-bar-item">
-            <a class="services__tabs-bar-btn btn" href="#">
-              Кредит
-            </a>
-          </li>
-        </ul>
-        <section class="services__tabs">
-          <section class="services__tabs-item services__tabs-item_delivery">
-            <h2 class="services__tabs-title">Доставка</h2>
-            <p class="services__tabs-description">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
-            <img class="services__tabs-img" src="img/services-tabs_delivery.svg" width="136" height="164" alt="Иконка 'Доставка'">
+        <div class="services-continer">
+          <ul class="services__tabs-bar">
+            <li class="services__tabs-bar-item">
+              <a class="services__tabs-bar-btn btn" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="services__tabs-bar-item">
+              <a class="services__tabs-bar-btn btn"  href="#">
+                Гарантия
+              </a>
+            </li>
+            <li class="services__tabs-bar-item">
+              <a class="services__tabs-bar-btn btn" href="#">
+                Кредит
+              </a>
+            </li>
+          </ul>
+          <section class="services__tabs">
+            <section class="services__tabs-item services__tabs-item_delivery">
+              <div class="services__tabs-continer">
+                <h2 class="services__tabs-title">Доставка</h2>
+                <p class="services__tabs-description">
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
+              <img class="services__tabs-img" src="img/services-tabs_delivery.svg" width="136" height="164" alt="Иконка 'Доставка'">
+            </section>
+            <section class="services__tabs-item services__tabs-item_warranty">
+              <h2 class="services__tabs-title">Гарантия</h2>
+              <p class="services__tabs-description">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.  Товар, не дом, конечно же.
+              </p>
+              <img class="services__tabs-img" src="img/services-tabs_warranty.svg" width="171" height="194" alt="Иконка 'Гарантия'">
+            </section>
+            <section class="services__tabs-item services-tabs_credit">
+              <h2 class="services__tabs-title">Кредит</h2>
+              <p class="services__tabs-description">
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
+            </p> 
+            <img class="services__tabs-img" src="img/services-tabs_credit.svg" width="156" height="186" alt="Иконка 'Кредит'">
+            </section>
           </section>
-          <section class="services__tabs-item services__tabs-item_warranty">
-            <h2 class="services__tabs-title">Гарантия</h2>
-            <p class="services__tabs-description">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.  Товар, не дом, конечно же.
-            </p>
-            <img class="services__tabs-img" src="img/services-tabs_warranty.svg" width="171" height="194" alt="Иконка 'Гарантия'">
-          </section>
-          <section class="services__tabs-item services-tabs_credit">
-            <h2 class="services__tabs-title">Кредит</h2>
-            <p class="services__tabs-description">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
-          </p> 
-          <img class="services__tabs-img" src="img/services-tabs_credit.svg" width="156" height="186" alt="Иконка 'Кредит'">
-          </section>
-        </section>
+        </div>
       </section> 
       <section class="partners">
         <ul class="partners-list">

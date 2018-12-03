@@ -294,13 +294,15 @@ margin-bottom: 40px;
   justify-content: space-around;
   width: 1160px;
   margin: 0 auto 84px auto;
-
+  padding:0;
   list-style: none;
 }
 
-.product-type__link {
-  width: 115px;
+.product-type__item {
+  width: 160px;
+}
 
+.product-type__link {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -313,6 +315,9 @@ margin-bottom: 40px;
 }
 
 .product-type__img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 160px;
   margin-bottom: 40px;
@@ -334,19 +339,50 @@ margin-bottom: 40px;
 }
 
 .services {
-  background-color: #e5e5e5;
+  background: linear-gradient(to bottom, #ffffff 0px, #ffffff 80px, #e5e5e5 80px);
+}
+
+.services-continer {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .services__tabs-bar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0;
+  padding-top: 65px;
+  padding-right: 20px;
   list-style: none;
+}
+
+.services__tabs-bar-item {
+  margin-bottom: 50px;
 }
 
 .services__tabs-bar-btn,
 .services__tabs-bar-btn:hover {
   color: #000000;
 }
+
 .services__tabs-bar-btn:active {
   color: #f7e184;
+}
+
+.services__tabs {
+  display: flex;
+}
+
+.services__tabs-item {
+  display: flex;
+  padding-left: 120px;
+  align-self: center;
+}
+
+.services__tabs-continer {
+  width: 460px;
 }
 
 .services__tabs-title {
@@ -355,21 +391,49 @@ margin-bottom: 40px;
   line-height: 47.5 px;
   font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .services__tabs-description {
   color: #464646;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.services__tabs-img {
+  margin-right: 80px;
+}
+
+.services__tabs-item_warranty, 
+.services-tabs_credit {
+  display: none;
 }
 
 .partners-list {
+  width: 1160px;
+  height: 100px; /*  на время */
   list-style: none;
+  margin: 90px auto;
 }
 
 .partners-list__link_gji {
-  background-image: url(../img/dji-logo_gray.jpg);
+  width: 260px;
+  height: 100px;
+  background-image: url("../img/dji-logo_gray.jpg");
   background-repeat: no-repeat;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-company {
+  width: 462px;
+}
 .about-company__title {
   font-weight: 800;
   font-size: 47.5px;
@@ -395,6 +459,9 @@ margin-bottom: 40px;
   letter-spacing: normal;
 }
 
+.contacts {
+  width: 560px;
+}
 .contacts__title {
   font-weight: 800;
   font-size: 47.5px;
@@ -411,8 +478,12 @@ margin-bottom: 40px;
 .site-footer {
   color: #e5e5e5;
   letter-spacing: normal;
-
+  margin-top: 80px;
   background-color: #464646;
+}
+
+.site-footer__nav {
+  display: flex;
 }
 
 .site-footer__logo:hover {
