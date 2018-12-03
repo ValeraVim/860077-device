@@ -56,49 +56,39 @@ a {
   opacity: 0.3;
 }
 
-.site-header {
-  width: 1440px;
+.container {
+  width: 1160px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .site-header__nav {
-  width: 1160px;
-  min-height: 300px; /*временно*/
-  margin: 0 auto;
-  padding: 25px 60px 0 60px;
+  width: 1040px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 60px;
 
-  background: linear-gradient(to bottom, #ffffff 0px, #ffffff 40px,  rgba(240, 197, 46, 0.5) 40px);
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .site-header__logo-link:hover {
-    opacity: 0.6;
-  }
-  
-.site-header__logo-link:active {
-    opacity: 0.3;
-  }
+  opacity: 0.6;
+}
 
-.site-header__nav-continer {
+.site-header__logo-link:active {
+  opacity: 0.3;
+}
+
+.site-header__nav-container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
 .site-header__search {
-  width: 580px;
+  width: 441px;
 }
-
-/*
-.site-header__search-label {
-  width: 16px;
-  height: 16px;
-  background-image: url("../img/search-icon.svg");
-  background-repeat: no-repeat;
-}
-Работает только если у спана убрать класс 
-и не оставлять его пустым, пока не могу
-решить эту проблему.
-*/
 
 .site-header__search-input {
   background-color: transparent;
@@ -177,20 +167,22 @@ a {
 
 .site-header__menu {
   display: flex;
+  margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .site-header__menu-item:first-child {
-    margin-right: 350px;
+  margin-right: 280px;
 }
 
 .site-header__menu-item:nth-child(2) {
-    margin-right: 38px;
+  margin-right: 38px;
 }
 
 .site-header__menu-item:last-child {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .site-header__menu-link {
@@ -212,18 +204,19 @@ a {
 }
 
 .site-header__sub-menu {
-  width: 600px;
-  height: 120px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 600px;
+  height: 120px;
+  padding: 0;
+
   list-style: none;
   column-count: 3;
-  padding: 0;
 }
 
 .site-header__sub-menu-item:nth-child(5) {
-margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .site-header__sub-menu-link {
@@ -239,17 +232,10 @@ margin-bottom: 40px;
   opacity: 0.3;
 }
 
-.site-main {
-  width: 1440px;
-  margin: 0 auto;
-}
-
 .slider__item {
   display: flex;
   width: 1160px;
-  margin: 0 auto;
-  margin: 0 auto 106px auto;
-  padding: 0 60px;
+  margin-bottom: 100px;
 }
 
 .slider__img {
@@ -285,16 +271,17 @@ margin-bottom: 40px;
   font-size: 13px;
   line-height: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
-  color: rgba(70, 70, 70, 1);
+  color: #464646;
   letter-spacing: 0.008em;
 }
 
 .product-type__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 1160px;
-  margin: 0 auto 84px auto;
-  padding:0;
+  margin-bottom: 90px;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -338,14 +325,10 @@ margin-bottom: 40px;
   opacity: 0.3;
 }
 
-.services {
-  background: linear-gradient(to bottom, #ffffff 0px, #ffffff 80px, #e5e5e5 80px);
-}
-
-.services-continer {
-  width: 1160px;
-  margin: 0 auto;
+.services-container {
   display: flex;
+  width: 1160px;
+  margin-bottom: 90px;
 }
 
 .services__tabs-bar {
@@ -355,6 +338,7 @@ margin-bottom: 40px;
   margin: 0;
   padding-top: 65px;
   padding-right: 20px;
+
   list-style: none;
 }
 
@@ -376,35 +360,33 @@ margin-bottom: 40px;
 }
 
 .services__tabs-item {
-  display: flex;
-  padding-left: 120px;
-  align-self: center;
-}
-
-.services__tabs-continer {
   width: 460px;
+  padding-top: 80px;
+  padding-left: 120px;
 }
 
 .services__tabs-title {
+  margin: 0;
+
   font-weight: 800;
   font-size: 47.5px;
   line-height: 47.5 px;
   font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.03em;
-  margin: 0;
 }
 
 .services__tabs-description {
-  color: #464646;
   margin-top: 40px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+
+  color: #464646;
 }
 
 .services__tabs-img {
   margin-right: 80px;
 }
 
-.services__tabs-item_warranty, 
+.services__tabs-item_warranty,
 .services-tabs_credit {
   display: none;
 }
@@ -412,13 +394,16 @@ margin-bottom: 40px;
 .partners-list {
   width: 1160px;
   height: 100px; /*  на время */
+  margin-bottom: 90px;
+  padding-left: 0;
+
   list-style: none;
-  margin: 90px auto;
 }
 
 .partners-list__link_gji {
   width: 260px;
   height: 100px;
+
   background-image: url("../img/dji-logo_gray.jpg");
   background-repeat: no-repeat;
 }
@@ -426,9 +411,8 @@ margin-bottom: 40px;
 .info {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .about-company {
@@ -476,14 +460,22 @@ margin-bottom: 40px;
 }
 
 .site-footer {
+  margin-top: 80px;
+
   color: #e5e5e5;
   letter-spacing: normal;
-  margin-top: 80px;
+
   background-color: #464646;
 }
 
 .site-footer__nav {
   display: flex;
+  flex-direction: column;
+}
+
+.site-footer-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-footer__logo:hover {
@@ -494,11 +486,10 @@ margin-bottom: 40px;
   opacity: 0.3;
 }
 
-.site-footer__phone {
-  color: #ffffff;
-}
-
 .site-footer__user-block {
+  display: flex;
+  width: 350px;
+
   list-style: none;
 }
 
@@ -519,6 +510,12 @@ margin-bottom: 40px;
 }
 
 .site-footer__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 440px;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -540,14 +537,17 @@ margin-bottom: 40px;
   opacity: 0.3;
 }
 
+.site-footer__phone {
+  color: #ffffff;
+}
+
 .icon-html-academy:hover {
   opacity: 0.6;
 }
 
-.icon-html-academy:active {
-  opacity: 0.3;
-}
 .site-footer__socials {
+  display: flex;
+
   list-style: none;
 }
 
@@ -562,6 +562,16 @@ margin-bottom: 40px;
   opacity: 0.1;
 }
 
+.icon-html-academy:active {
+  opacity: 0.3;
+}
+
+/* Внутренняя страница */
+
+.site-main-container {
+  padding-left: 60px;
+}
+
 .site-main__title {
   font-weight: 800;
   font-size: 47.5px;
@@ -573,6 +583,9 @@ margin-bottom: 40px;
 }
 
 .breadscrumbs__list {
+  display: flex;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -591,17 +604,76 @@ margin-bottom: 40px;
   opacity: 0.1;
 }
 
+.filter {
+  background-color: #ebebeb;
+}
+
+.filter__form-title {
+  font-weight: 800;
+  font-size: 17.5px;
+  line-height: 25.5px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-stretch: normal;
+  letter-spacing: 0.23em;
+
+  background-color: #dbdbdb;
+}
+
+.filter__title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.filter__label {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.008em;
+}
+
+.catalog-container {
+  display: flex;
+}
+
+.catalog-container-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-container-center {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+}
+
+.sorting {
+  display: flex;
+  padding-left: 70px;
+
+  background-color: #ebebeb;
+}
+
 .sorting__title {
   font-weight: 800;
   font-size: 17.5px;
   line-height: 25.5px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
+  text-transform: uppercase;
   font-stretch: normal;
   letter-spacing: 0.23em;
 }
 
+.sorting__item {
+  margin-left: 30px;
+}
+
 .sorting__list {
+  display: flex;
+
   list-style: none;
 }
 
@@ -621,25 +693,16 @@ margin-bottom: 40px;
   opacity: 1;
 }
 
-.catalog-filter__title {
-  font-weight: 800;
-  font-size: 17.5px;
-  line-height: 25.5px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.23em;
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-bottom: 60px;
 }
 
-.filter__title {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
-}
-
-.filter__label {
-  font-size: 14px;
-  line-height: 40px;
-  letter-spacing: 0.008em;
+.catalog__card-product {
+  width: 360px;
+  margin-right: 40px;
 }
 
 .card-product__description {
@@ -677,6 +740,25 @@ margin-bottom: 40px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.2em;
+}
+
+.catalog-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  padding: 30px;
+
+  background-color: #ebebeb;
+}
+
+.catalog-nav__pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-nav__pagination-item {
+  margin-left: 31px;
 }
 
 .modal {
