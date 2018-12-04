@@ -66,6 +66,7 @@ a {
   position: relative;
 
   width: 1040px;
+  min-height: 266px;
   margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
@@ -130,6 +131,7 @@ a {
 
 .site-header__search-input:focus {
   z-index: 2;
+
   border-bottom: 2px solid #000000;
 }
 
@@ -283,7 +285,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding-bottom: 30px;
   padding-left: 0;
 
   list-style: none;
@@ -339,6 +340,9 @@ a {
 }
 
 .site-header__sub-menu {
+  position: absolute;
+
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
   width: 600px;
@@ -348,6 +352,14 @@ a {
 
   list-style: none;
   column-count: 3;
+}
+
+.site-header__menu-link_catalog:hover + .site-header__sub-menu {
+  display: flex;
+}
+
+.site-header__sub-menu:hover {
+  display: flex;
 }
 
 .site-header__sub-menu-item:nth-child(5) {
@@ -369,6 +381,7 @@ a {
 
 .slider {
   position: relative;
+
   display: flex;
 }
 
@@ -536,23 +549,76 @@ a {
 }
 
 .partners {
-  position: relative;
   width: 1160px;
   margin-bottom: 90px;
 }
 
 .partners-list {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
   padding-left: 0;
+
+  list-style: none;
 }
 
 .partners-list__link_gji {
-  position: absolute;
+  display: block;
   width: 260px;
   height: 100px;
 
   background-image: url("../img/dji-logo_gray.jpg");
   background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.partners-list__link_sp-gadgets {
+  display: block;
+  width: 260px;
+  height: 100px;
+
+  background-image: url("../img/sp-gadgets-logo_gray.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.partners-list__link_gopro {
+  display: block;
+  width: 260px;
+  height: 100px;
+
+  background-image: url("../img/gopro-logo_gray.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.partners-list__link_vive {
+  display: block;
+  width: 260px;
+  height: 100px;
+
+  background-image: url("../img/vive-logo_gray.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.partners-list__link_gji:hover {
+  background-image: url("../img/dji-logo_color.jpg");
+  opacity: 1;
+}
+
+.partners-list__link_sp-gadgets:hover {
+  background-image: url("../img/sp-gadgets-logo_color.jpg");
+  opacity: 1;
+}
+
+.partners-list__link_gopro:hover {
+  background-image: url("../img/gopro-logo_color.jpg");
+  opacity: 1;
+}
+
+.partners-list__link_vive:hover {
+  background-image: url("../img/vive-logo_color.jpg");
+  opacity: 1;
 }
 
 .info {
