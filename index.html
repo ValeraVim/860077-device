@@ -14,17 +14,17 @@
           <a class="site-header__logo-link">DEVICE</a>
           <form class="site-header__search" action="https://echo.htmlacademy.ru" method="GET">
             <label class="site-header__search-label" for="search"><span class="visually-hidden">Поиск:</span></label> 
-            <input class="site-header__search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+            <input class="site-header__search-input" type="text" name="search" id="search" placeholder="Поиск по сайту" autocomplete="off">
             <button class="site-header__search-btn" type="submit" >Найти</button>
           </form>
           <ul class="site-header__user-block">
-            <li class="site-header__user-item">
+            <li class="site-header__user-item site-header__user-item_profile">
               <a class="site-header__user-link site-header__user-link_login" href="#">Войти</a>
             </li>
-            <li class="site-header__user-item">
+            <li class="site-header__user-item site-header__user-item_compare">
               <a class="site-header__user-link site-header__user-link_compare" href="#">Сравнить</a>
             </li>
-            <li class="site-header__user-item">
+            <li class="site-header__user-item site-header__user-item_basket">
               <a class="site-header__user-link site-header__user-link_basket" href="#">Корзина</a>
             </li>
           </ul>
@@ -36,29 +36,29 @@
                   <a class="site-header__sub-menu-link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="site-header__sub-menu-item">
-                  <a class="site-header__sub-menu-link" href="inner.html">Моноподы для селфи</a>
-                </li>
-                <li class="site-header__sub-menu-item">
-                  <a class="site-header__sub-menu-link" href="#">Экшн-камеры</a>
-                </li>
-                <li class="site-header__sub-menu-item">
-                  <a class="site-header__sub-menu-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="site-header__sub-menu-item">
-                  <a class="site-header__sub-menu-link site-header__sub-menu-link_watch" href="#">Умные часы</a>
+                  <a class="site-header__sub-menu-link" href="inner.html">Фитнес-браслеты</a>
                 </li>
                 <li class="site-header__sub-menu-item">
                   <a class="site-header__sub-menu-link" href="#">Квадрокоптеры</a>
                 </li>
+                <li class="site-header__sub-menu-item">
+                  <a class="site-header__sub-menu-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="site-header__sub-menu-item site-header__sub-menu-item_watch">
+                  <a class="site-header__sub-menu-link" href="#">Умные часы</a>
+                </li>
+                <li class="site-header__sub-menu-item">
+                  <a class="site-header__sub-menu-link" href="#">Экшн-камеры</a>
+                </li>
             </ul>
             </li>
-            <li class="site-header__menu-item">
+            <li class="site-header__menu-item site-header__menu-item_delivery">
               <a class="site-header__menu-link site-header__menu-link_delivery" href="#">Доставка</a>
             </li>
-            <li class="site-header__menu-item">
+            <li class="site-header__menu-item site-header__menu-item_warranty">
               <a class="site-header__menu-link site-header__menu-link_warranty" href="#">Гарантия</a>
             </li>
-            <li class="site-header__menu-item">
+            <li class="site-header__menu-item site-header__menu-item_contacts">
               <a class="site-header__menu-link site-header__menu-link_contacts" href="#">Контакты</a>
             </li>
           </ul>
@@ -66,9 +66,9 @@
       </header>
       <main class="site-main">
         <section class="site-main__slider slider">
-          <input class="slider__switch-radio visually-hidden" type="radio"  name="slide" id="first-slide" checked>
-          <input class="slider__switch-radio visually-hidden" type="radio"  name="slide" id="second-slide">
-          <input class="slider__switch-radio visually-hidden" type="radio"  name="slide" id="third-slide">
+          <input class="slider__switch-radio slider__switch-radio_first visually-hidden" type="radio"  name="slide" id="first-slide" checked>
+          <input class="slider__switch-radio slider__switch-radio_second visually-hidden" type="radio"  name="slide" id="second-slide">
+          <input class="slider__switch-radio slider__switch-radio_third visually-hidden" type="radio"  name="slide" id="third-slide">
           <section class="slider__item slider__item_first">
             <img class="slider__img" src="img/slide_selfie-stick.png" width="384" height="486" alt="Самая длинная палка для сэлфи">
             <div class="slider__description">
@@ -175,7 +175,7 @@
           <li class="product-type__item">
           <a class="product-type__link" href="#">
               <div class="product-type__img-wrap">
-                <img class="product-type__img" src="img/bracelets-icon.svg" width="97" height="55" alt="Иконка 'Фитнесc-браслет'">
+                <img class="product-type__img" src="img/bracelets-icon.svg" width="107" height="65" alt="Иконка 'Фитнесc-браслет'">
               </div>
               Фитнес-браслеты
           </a>
@@ -201,7 +201,7 @@
         <section class="services">
           <ul class="services__tabs-bar">
             <li class="services__tabs-bar-item">
-              <a class="services__tabs-bar-btn btn" href="#">
+              <a class="services__tabs-bar-btn btn_active" href="#">
                 Доставка
               </a>
             </li>
