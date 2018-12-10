@@ -384,20 +384,20 @@ a {
   background-color: #f7e296;
 }
 
-.site-header__sub-menu- {
+.site-header__sub-menu-column {
   display: flex;
   flex-direction: column;
 }
 
-.site-header__sub-menu-_first {
+.site-header__sub-menu-column_first {
   width: 239px;
 }
 
-.site-header__sub-menu-_second {
+.site-header__sub-menu-column_second {
   width: 201px;
 }
 
-.site-header__sub-menu-_third {
+.site-header__sub-menu-column_third {
   width: 230px;
 }
 
