@@ -77,14 +77,19 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
+.btn:focus::before {
+  height: 40px;
+
+  transition: all 0.2s ease-in-out;
+}
+
 .btn:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 .container {
   width: 1160px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .site-header__nav {
@@ -94,7 +99,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 32px;
 
   background-color: #f7e296;
 }
@@ -129,9 +134,7 @@ a {
 
   display: flex;
   width: 440px;
-  height: 48px;
   margin-left: 60px;
-  padding: 0;
 }
 
 .site-header__search-label {
@@ -144,12 +147,14 @@ a {
 
   background-image: url("../img/search-icon.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .site-header__search-input {
-  width: 355px;
+  width: 350px;
   height: 48px;
   padding: 0;
+  padding-right: 5px;
   padding-left: 38px;
 
   font-weight: 300;
@@ -195,34 +200,38 @@ a {
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
-  letter-spacing: 0.01em;
-
-  opacity: 0;
-}
-
-.site-header__search-input:focus + .site-header__search-btn {
-  color: #000000;
 
   background-color: transparent;
   border: 2px solid #000000;
-  opacity: 1;
+  opacity: 0;
+
+  pointer-events: none;
 }
 
-.site-header__search-input:focus + .site-header__search-btn:hover {
-  color: #ffffff;
-
-  background-color: #000000;
-  outline: none;
+.site-header__search-input:focus + .site-header__search-btn {
   opacity: 1;
+
+  pointer-events: auto;
 }
 
+.site-header__search-input:focus + .site-header__search-btn:hover,
 .site-header__search-btn:focus {
   color: #ffffff;
 
   background-color: #000000;
-  border: none;
   outline: none;
   opacity: 1;
+
+  pointer-events: auto;
+}
+
+.site-header__search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  border: none;
+  opacity: 1;
+
+  pointer-events: auto;
 }
 
 .site-header__user-block {
@@ -351,14 +360,14 @@ a {
 .site-header__menu-link_catalog {
   position: relative;
 
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .site-header__menu-link_catalog::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 230px;
+  top: 4px;
+  right: 2px;
 
   width: 16px;
   height: 16px;
@@ -567,7 +576,6 @@ a {
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 50%;
-  outline: none;
   cursor: pointer;
 }
 
@@ -585,7 +593,6 @@ a {
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 50%;
-  outline: none;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
@@ -605,7 +612,7 @@ a {
 .product-type__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 171px;
+  margin-bottom: 152px;
   padding: 0;
 
   list-style: none;
@@ -653,31 +660,35 @@ a {
   background-color: #f0c52e;
 }
 
+.product-type__link:focus .product-type__img-wrap {
+  background-color: #f0c52e;
+}
+
 .product-type__link:active .product-type__img {
   opacity: 0.3;
 }
 
 .services {
-  background-color: #e5e5e5;
+  background: linear-gradient(to bottom, #ffffff 0px, #ffffff 20px, #e5e5e5 20px);
 }
 
 .services__container {
   display: flex;
   margin-bottom: 95px;
-  padding-bottom: 95px;
+  padding-bottom: 115px;
 }
 
 .services__tabs-bar {
   position: relative;
-  top: -20px;
   z-index: 1;
 
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 270px;
   margin: 0;
-  margin-right: 120px;
+  margin-right: 115px;
   padding: 0;
+  padding-right: 15px;
 
   list-style: none;
 }
@@ -705,9 +716,7 @@ a {
   color: #000000;
 }
 
-.btn_active,
-.btn_active:hover,
-.btn_active:active {
+.btn_active {
   position: relative;
 
   display: flex;
@@ -735,9 +744,6 @@ a {
 }
 
 .services__tabs {
-  position: relative;
-  top: -26px;
-
   display: flex;
   margin: 0;
   padding: 0;
@@ -747,6 +753,7 @@ a {
 
 .services__tabs-item {
   position: relative;
+  top: -7px;
 
   width: 700px;
 
@@ -808,8 +815,14 @@ a {
   height: 100px;
 
   background-repeat: no-repeat;
-  background-position: 0 0;
   opacity: 0.2;
+}
+
+.partners-list__link:hover,
+.partners-list__link:focus {
+  opacity: 1;
+
+  transition: all 0.2s ease-in-out;
 }
 
 .partners-list__link_gji {
@@ -828,30 +841,29 @@ a {
   background-image: url("../img/vive-logo_gray.jpg");
 }
 
-.partners-list__link:hover {
-  opacity: 1;
-}
-
-.partners-list__link_gji:hover {
+.partners-list__link_gji:hover,
+.partners-list__link_gji:focus {
   background-image: url("../img/dji-logo_color.jpg");
 }
 
-.partners-list__link_sp-gadgets:hover {
+.partners-list__link_sp-gadgets:hover,
+.partners-list__link_sp-gadgets:focus {
   background-image: url("../img/sp-gadgets-logo_color.jpg");
 }
 
-.partners-list__link_gopro:hover {
+.partners-list__link_gopro:hover,
+.partners-list__link_gopro:focus {
   background-image: url("../img/gopro-logo_color.jpg");
 }
 
-.partners-list__link_vive:hover {
+.partners-list__link_vive:hover,
+.partners-list__link_vive:focus {
   background-image: url("../img/vive-logo_color.jpg");
 }
 
 .info__container {
   display: flex;
   margin-bottom: 82px;
-  padding-top: 53px;
 }
 
 .about-company {
@@ -859,12 +871,13 @@ a {
 
   width: 478px;
   margin-right: 119px;
+  padding-top: 53px;
 }
 
 .about-company::before {
   content: "";
   position: absolute;
-  top: -53px;
+  top: 0;
 
   display: block;
   width: 80px;
@@ -898,13 +911,14 @@ a {
   margin-top: 65px;
   margin-bottom: 53px;
   padding: 0;
-  padding-left: 35px;
 
   list-style: none;
 }
 
 .about-company__item {
   position: relative;
+
+  padding-left: 35px;
 
   font-weight: 800;
   font-size: 16px;
@@ -917,6 +931,7 @@ a {
   content: "";
   position: absolute;
   top: 15px;
+  left: 0;
 
   display: block;
   width: 4px;
@@ -934,13 +949,14 @@ a {
   position: relative;
 
   width: 553px;
+  padding-top: 53px;
   padding-left: 2px;
 }
 
 .contacts::before {
   content: "";
   position: absolute;
-  top: -53px;
+  top: 0;
 
   display: block;
   width: 80px;
@@ -1054,11 +1070,11 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.site-footer__user-link:hover {
+.site-footer__user-link[href]:hover {
   color: #ffffff;
 }
 
-.site-footer__user-link:active {
+.site-footer__user-link[href]:active {
   opacity: 0.6;
 }
 
@@ -1067,7 +1083,6 @@ a {
   position: absolute;
 
   background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .site-footer__user-link:hover::before {
@@ -1247,6 +1262,7 @@ a {
   position: absolute;
   top: 13px;
   right: 15px;
+
   display: block;
   width: 4px;
   height: 7px;
