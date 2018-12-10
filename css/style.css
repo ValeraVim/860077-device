@@ -88,8 +88,9 @@ a {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .site-header__nav {
@@ -373,7 +374,7 @@ a {
   height: 16px;
 
   background-image: url("../img/plus-icon.svg");
-  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.3;
 }
 
