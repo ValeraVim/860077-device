@@ -342,21 +342,21 @@
       </div>  
     </footer>
     <div class="modal modal_write-us">
-      <button class="modal__close">Закрыть</button>
+      <button class="modal__close"><span class="visually-hidden">Закрыть</span></button>
       <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
-        <label class="form-write-us__label" for="input-name">
+        <label class="form-write-us__label">
           Ваше имя:
+          <input class="form-write-us__input" id="input-name" type="text" name="name" placeholder="Имя Фамилия" autocomplete="off" required> 
         </label>
-        <input class="form-write-us__input" id="input-name" type="text" name="name" placeholder="Имя Фамилия">
-        <label class="form-write-us__label" for="input-email">
+        <label class="form-write-us__label">
           Ваш e-mail:
+          <input class="form-write-us__input" id="input-email" type="text" name="email" placeholder="email@example.com" autocomplete="off">
         </label>
-        <input class="form-write-us__input" id="input-email" type="text" name="email" placeholder="email@example.com">
-        <label class="form-write-us__label" for="input-letter">
+        <label class="form-write-us__label form-write-us__label_text">
           Текст письма:
+          <textarea name="form-write-us__input form-write-us__input_text" id="input-letter" placeholder="В свободной форме" autocomplete="off"></textarea>
         </label>
-        <textarea name="form-write-us__input" id="input-letter" placeholder="В свободной форме"></textarea>
-        <button class="form-write-us__btn btn" type="submit">Отправить</button>
+        <button class="form-write-us__btn btn btn_btn" type="submit">Отправить</button>
       </form>
     </div>
     <div class="modal modal_map">
