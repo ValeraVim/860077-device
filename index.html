@@ -346,16 +346,16 @@
       <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
         <label class="form-write-us__label">
           Ваше имя:
-          <input class="form-write-us__input" id="input-name" type="text" name="name" placeholder="Имя Фамилия" autocomplete="off" required> 
+          <input class="form-write-us__input" id="input-name" type="text" name="name" placeholder="Имя Фамилия" autocomplete="off"> 
         </label>
         <label class="form-write-us__label">
           Ваш e-mail:
           <input class="form-write-us__input" id="input-email" type="text" name="email" placeholder="email@example.com" autocomplete="off">
         </label>
-        <label class="form-write-us__label form-write-us__label_text">
+        <label class="form-write-us__label form-write-us__label_text" for="input-letter">
           Текст письма:
-          <textarea name="form-write-us__input form-write-us__input_text" id="input-letter" placeholder="В свободной форме" autocomplete="off"></textarea>
         </label>
+        <textarea class="form-write-us__input form-write-us__textarea" name="text" id="input-letter" placeholder="В свободной форме"></textarea>
         <button class="form-write-us__btn btn" type="submit">Отправить</button>
       </form>
     </div>

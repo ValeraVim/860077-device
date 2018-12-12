@@ -1896,8 +1896,10 @@ a {
   opacity: 1;
 }
 
-.modal__close:active {
+.modal__close:active,
+..modal__close:focus {
   opacity: 0.3;
+  outline: none;
 }
 
 .modal_write-us {
@@ -1928,12 +1930,7 @@ a {
   font-family: "Gilroy", "Arial", sans-serif;
 }
 
-.form-write-us__label_text {
-  width: 100%;
-}
-
-.form-write-us__input,
-.form-write-us__input:invalid {
+.form-write-us__input {
   width: 320px;
   padding: 20px;
 
@@ -1948,6 +1945,12 @@ a {
   outline: none;
 }
 
+.form-write-us__textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+}
+
 .form-write-us__input:hover {
   background-color: #dbdbdb;
 }
@@ -1957,9 +1960,9 @@ a {
   border: 2px solid #f0c52e;
 }
 
-.form-write-us__input:valid {
+/* .form-write-us__input:valid {
   background-color: #edb5b5;
-}
+} */
 
 .form-write-us__input::placeholder {
   font-weight: 300;
