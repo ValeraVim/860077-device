@@ -1466,6 +1466,7 @@ a {
 
 .filter__range-wrap {
   position: relative;
+
   padding: 12px 0;
 }
 
@@ -1609,6 +1610,7 @@ a {
 
 .sorting__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -1867,8 +1869,9 @@ a {
 
 .modal {
   position: fixed;
-
-  display: none;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
 
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
@@ -1885,6 +1888,7 @@ a {
   background-image: url("../img/close-btn-popup.svg");
   background-repeat: no-repeat;
   border: none;
+  border-radius: 50%;
   opacity: 0.5;
 }
 
@@ -1897,11 +1901,7 @@ a {
 }
 
 .modal_write-us {
-  top: 50%;
-  left: 50%;
-  z-index: 4;
-  /* display: block; */
-
+  display: block;
   width: 760px;
   height: 350px;
   margin-top: -275px;
@@ -1977,4 +1977,18 @@ a {
 
 .form-write-us__btn {
   width: 200px;
+}
+
+.modal_map {
+  display: none;
+  width: 960px;
+  height: 550px;
+  margin-top: -275px;
+  margin-left: -453px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
