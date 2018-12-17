@@ -14,23 +14,23 @@ var warranty = document.querySelector(".services__tabs-item_warranty");
 var credit = document.querySelector(".services__tabs-item_credit"); 
 
 contactsBtn.addEventListener ("click", function (evt) {
-evt.preventDefault();
-modalWrite.classList.add("modal_open");
+    evt.preventDefault();
+    modalWrite.classList.add("modal_open");
 });
       
 closeWrite.addEventListener("click", function (evt) {
-evt.preventDefault();
-modalWrite.classList.remove("modal_open");
+    evt.preventDefault();
+    modalWrite.classList.remove("modal_open");
 });
 
 contactsMap.addEventListener ("click", function (evt) {
-evt.preventDefault();
-modalMap.classList.add("modal_open");
+    evt.preventDefault();
+    modalMap.classList.add("modal_open");
 });
           
 closeMap.addEventListener("click", function (evt) {
-evt.preventDefault();
-modalMap.classList.remove("modal_open");
+    evt.preventDefault();
+    modalMap.classList.remove("modal_open");
 });
 
 deliveryBtn.addEventListener ("click", function (evt) {
