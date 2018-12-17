@@ -37,10 +37,7 @@ deliveryBtn.addEventListener ("click", function (evt) {
     evt.preventDefault();
 
     deliveryBtn.classList.add("services__tabs-bar-btn_active");
-    deliveryBtn.classList.remove("btn");
-    warrantyBtn.classList.add("btn");
     warrantyBtn.classList.remove("services__tabs-bar-btn_active");
-    creditBtn.classList.add("btn");
     creditBtn.classList.remove("services__tabs-bar-btn_active");
 
 
@@ -53,10 +50,7 @@ warrantyBtn.addEventListener ("click", function (evt) {
     evt.preventDefault();
         
     warrantyBtn.classList.add("services__tabs-bar-btn_active");
-    warrantyBtn.classList.remove("btn");
-    deliveryBtn.classList.add("btn");
     deliveryBtn.classList.remove("services__tabs-bar-btn_active");
-    creditBtn.classList.add("btn");
     creditBtn.classList.remove("services__tabs-bar-btn_active");
     
     warranty.classList.remove("services__tabs-item_close");
@@ -68,10 +62,7 @@ creditBtn.addEventListener ("click", function (evt) {
     evt.preventDefault();
             
     creditBtn.classList.add("services__tabs-bar-btn_active");
-    creditBtn.classList.remove("btn");
-    deliveryBtn.classList.add("btn");
     deliveryBtn.classList.remove("services__tabs-bar-btn_active");
-    warrantyBtn.classList.add("btn");
     warrantyBtn.classList.remove("services__tabs-bar-btn_active");
      
     credit.classList.remove("services__tabs-item_close");

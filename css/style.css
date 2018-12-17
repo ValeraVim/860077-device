@@ -772,7 +772,8 @@ a {
   background-color: #000000;
 }
 
-.services__tabs-bar-btn:active::before {
+.services__tabs-bar-btn:active::before,
+.services__tabs-bar-btn_active::before {
   display: none;
 }
 
@@ -1484,17 +1485,23 @@ a {
   position: relative;
 
   display: flex;
-  margin-bottom: 33px;
+  padding: 30px;
+  margin-bottom: 22px;
 }
 
 .filter__range {
-  position: relative;
+  position: absolute;
+  top: 0;
 
   padding-top: 25px;
 }
 
 .filter__range_right {
-  margin-left: 65px;
+  left: 92px;
+}
+
+.filter__range_left {
+  left: 0px;
 }
 
 .filter__range-circle {
