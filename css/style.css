@@ -2018,6 +2018,8 @@ a {
   display: none;
 
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .modal_open {
@@ -2058,8 +2060,6 @@ a {
 .modal_write-us {
   width: 760px;
   height: 350px;
-  margin-top: -275px;
-  margin-left: -453px;
   padding: 100px;
 
   background-color: #ffffff;
@@ -2166,8 +2166,6 @@ a {
 .modal_map {
   width: 960px;
   height: 550px;
-  margin-top: -275px;
-  margin-left: -453px;
 
   background-color: #f1f1f1;
   background-image: url("../img/big-map.jpg");
