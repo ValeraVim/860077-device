@@ -14,6 +14,18 @@
   src: url("../fonts/gilroy-light-webfont.woff") format("woff");
 }
 
+@-webkit-keyframes puff {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes puff {
   from {
     opacity: 0;
@@ -61,7 +73,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   padding: 8px 0;
 
   font-weight: 800;
@@ -89,7 +100,8 @@ a {
   height: 8px;
 
   background-color: #f0c52e;
-  transform: translateY(-50%)
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .btn:hover::before,
@@ -176,9 +188,10 @@ a {
 
 .site-header__search-input {
   width: 350px;
-  height: 48px;
-  padding-top: 0;
+  height: 28px;
+  padding-top: 10px;
   padding-right: 5px;
+  padding-bottom: 10px;
   padding-left: 38px;
 
   font-weight: 300;
@@ -197,6 +210,33 @@ a {
   border-bottom: 2px solid #000000;
 }
 
+.site-header__search-input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+}
+
+.site-header__search-input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+}
+
+.site-header__search-input::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+}
+
 .site-header__search-input::placeholder {
   font-weight: 300;
   font-size: 15px;
@@ -206,8 +246,32 @@ a {
   letter-spacing: 0.01em;
 }
 
+.site-header__search-input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-header__search-input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-header__search-input:hover::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .site-header__search-input:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.site-header__search-input:focus::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+.site-header__search-input:focus:-ms-input-placeholder {
+  font-size: 0;
+}
+
+.site-header__search-input:focus::-ms-input-placeholder {
+  font-size: 0;
 }
 
 .site-header__search-input:focus::placeholder {
@@ -215,9 +279,8 @@ a {
 }
 
 .site-header__search-btn {
-  width: 85px;
   box-sizing: border-box;
-  
+  width: 85px;
   padding: 8px 0;
 
   font-weight: 300;
@@ -253,7 +316,6 @@ a {
 
 .site-header__search-btn:active {
   color: rgba(255, 255, 255, 0.3);
-
 
   opacity: 1;
 
@@ -760,6 +822,7 @@ a {
 
 .services__tabs-bar-btn:active {
   z-index: 1;
+
   width: 280px;
   padding-right: 120px;
 
@@ -769,7 +832,6 @@ a {
 }
 
 .services__tabs-bar-btn_active {
-
   width: 280px;
   padding-right: 120px;
 
@@ -1240,6 +1302,7 @@ a {
   width: 32px;
   height: 32px;
   margin: 0 11px;
+
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -1541,7 +1604,8 @@ a {
 }
 
 .filter__range-circle:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .filter__range-circle_left {
@@ -1959,7 +2023,8 @@ a {
 .modal_open {
   display: block;
 
-  animation: puff 0.5s linear;
+  -webkit-animation: puff 0.5s linear;
+          animation: puff 0.5s linear;
 }
 
 .modal__close {
@@ -2062,6 +2127,30 @@ a {
   resize: none;
 }
 
+.form-write-us__input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.form-write-us__input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.form-write-us__input::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: rgba(70, 70, 70, 0.4);
+}
+
 .form-write-us__input::placeholder {
   font-weight: 300;
   font-size: 14px;
@@ -2079,7 +2168,8 @@ a {
   height: 550px;
   margin-top: -275px;
   margin-left: -453px;
-  background-color: #f1f1f1 ;
+
+  background-color: #f1f1f1;
   background-image: url("../img/big-map.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
