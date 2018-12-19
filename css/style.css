@@ -80,7 +80,7 @@ a {
 .btn::before {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 50%;
   left: 0;
   z-index: -1;
 
@@ -89,11 +89,11 @@ a {
   height: 8px;
 
   background-color: #f0c52e;
+  transform: translateY(-50%)
 }
 
 .btn:hover::before,
 .btn:focus::before {
-  top: 0;
   left: 0;
 
   height: 100%;
@@ -102,7 +102,6 @@ a {
 }
 
 .btn:active {
-  top: 0;
   left: 0;
 
   color: rgba(0, 0, 0, 0.3);
@@ -178,7 +177,7 @@ a {
 .site-header__search-input {
   width: 350px;
   height: 48px;
-  padding: 0;
+  padding-top: 0;
   padding-right: 5px;
   padding-left: 38px;
 
@@ -254,6 +253,7 @@ a {
 
 .site-header__search-btn:active {
   color: rgba(255, 255, 255, 0.3);
+
 
   opacity: 1;
 
