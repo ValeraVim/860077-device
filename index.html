@@ -5,7 +5,7 @@
     <title>Интернет-магазин Device</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>   
     <header class="site-header"> 
@@ -149,50 +149,32 @@
         <div class="product-type__container container"> 
           <ul class="product-type__list">
             <li class="product-type__item">
-              <a class="product-type__link" href="#">
-                <div class="product-type__img-wrap">
-                  <img class="product-type__img" src="img/virtual-icon.svg" width="97" height="55" alt="Иконка 'Виртуальная реальность'">
-                </div>
+              <a class="product-type__link product-type__link_virtual" href="#">
                 Виртуальная реальность
               </a>
             </li>
             <li class="product-type__item">
-              <a class="product-type__link" href="inner.html">
-                <div class="product-type__img-wrap product-type__img-wrap_monopods">
-                  <img class="product-type__img" src="img/monopods-icon.svg" width="87" height="117" alt="Иконка 'Монопод'">
-                </div>
+              <a class="product-type__link product-type__link_monopods" href="inner.html">
                 Моноподы для&nbsp;селфи 
               </a>
             </li>
             <li class="product-type__item">
-              <a class="product-type__link" href="#">
-                <div class="product-type__img-wrap">
-                <img class="product-type__img" src="img/cameras-icon.svg" width="72" height="88" alt="Иконка 'Камера'">
-                </div>
+              <a class="product-type__link product-type__link_cameras" href="#">
                 Экшн-камеры 
               </a>
             </li>
           <li class="product-type__item">
-          <a class="product-type__link" href="#">
-              <div class="product-type__img-wrap">
-                <img class="product-type__img" src="img/bracelets-icon.svg" width="107" height="65" alt="Иконка 'Фитнесc-браслет'">
-              </div>
+          <a class="product-type__link product-type__link_blacelets" href="#">
               Фитнес-браслеты
           </a>
           </li>
           <li class="product-type__item">
-            <a class="product-type__link" href="#">
-              <div class="product-type__img-wrap">
-                <img class="product-type__img" src="img/watch-icon.svg" width="57" height="98" alt="Иконка 'Умные часы'">
-              </div>
+            <a class="product-type__link product-type__link_watch" href="#">
               Умные часы
             </a>
           </li>
           <li class="product-type__item">
-            <a class="product-type__link" href="#">
-              <div class="product-type__img-wrap">
-                <img class="product-type__img" src="img/quadcopters-icon.svg" width="133" height="70" alt="Иконка 'Квадрокоптер'">
-              </div>
+            <a class="product-type__link product-type__link_quadcopters" href="#">
               Квадрокоптеры
             </a>
           </li>
@@ -244,23 +226,27 @@
         <div class="partners__container container">
           <ul class="partners-list">
             <li class="partners-list__item">
-              <a class="partners-list__link partners-list__link_gji" href="#">
-                <span class="visually-hidden">DjI</span>
+              <a class="partners-list__link partners-list__link_dji" href="#">
+                <img class="partners-list__img partners-list__img_gray" width="260" height="100" src="img/dji-logo_gray.jpg" alt="dji">
+                <img class="partners-list__img partners-list__img_color" width="260" height="100" src="img/dji-logo_color.jpg" alt="dji"> 
               </a>
             </li>
             <li class="partners-list__item">
                 <a class="partners-list__link partners-list__link_sp-gadgets" href="#">
-                  <span class="visually-hidden">Sp-gadgets</span>
+                  <img class="partners-list__img partners-list__img_gray" width="260" height="100" src="img/sp-gadgets-logo_gray.jpg" alt="sp-gadgets">
+                  <img class="partners-list__img partners-list__img_color" width="260" height="100" src="img/sp-gadgets-logo_color.jpg" alt="sp-gadgets"> 
                 </a>
             </li>
             <li class="partners-list__item">
                 <a class="partners-list__link partners-list__link_gopro" href="#">
-                  <span class="visually-hidden">GoPro</span>
+                  <img class="partners-list__img partners-list__img_gray" width="260" height="100" src="img/gopro-logo_gray.jpg" alt="gopro">
+                  <img class="partners-list__img partners-list__img_color" width="260" height="100" src="img/gopro-logo_color.jpg" alt="gopro">   
                 </a> 
             </li>
             <li class="partners-list__item">
                 <a class="partners-list__link partners-list__link_vive" href="#">
-                  <span class="visually-hidden">Vive</span>
+                  <img class="partners-list__img partners-list__img_gray" width="260" height="100" src="img/vive-logo_gray.jpg" alt="vive">
+                  <img class="partners-list__img partners-list__img_color" width="260" height="100" src="img/vive-logo_color.jpg" alt="vive"> 
                 </a>
             </li>
           </ul> 
@@ -336,7 +322,7 @@
           </li>
           </ul>
           <a class="site-footer__icon-html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="site-footer__icon-html-academy-icon" src="img/logo-html-academy.svg" width="27" height="35" alt="Логотип html-academy">
+            <img class="site-footer__icon-html-academy-icon" src="img/logo-html-academy.svg" width="27" height="35" alt="Логотип html-academy">
           </a>
         </nav>
       </div>  

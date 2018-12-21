@@ -5,7 +5,7 @@
     <title>Интернет-магазин Device</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="site-header"> 
@@ -134,10 +134,19 @@
                 <li class="sorting__item">
                   <a class="sorting__link" href="#">По популярности</a>
                 </li>
+                <li class="sorting__item">
+                    <a class="sorting__link sorting__link_active" href="#">По цене</a>
+                </li>
+                <li class="sorting__item">
+                    <a class="sorting__link" href="#">По типу</a>
+                </li>
+                <li class="sorting__item">
+                    <a class="sorting__link" href="#">По популярности</a>
+                </li>
               </ul> 
               <div class="sorting__button-wrap">
-                <a class="sorting__button sorting__button_up" href="#"></a>
-                <a class="sorting__button sorting__button_active sorting__button_down" href="#"></a>
+                <a class="sorting__button sorting__button_up" href="#"><span class="visually-hidden">Вверх</span></a>
+                <a class="sorting__button sorting__button_active sorting__button_down" href="#"><span class="visually-hidden">Вниз</span></a>
               </div>
             </section>
             <section class="catalog">
@@ -146,8 +155,8 @@
                   <img class="catalog__card-product-img" alt="Любительская селфи-палка (фото)" src="img/selfie-stick_base.jpg" width="360" height="380">
                 </div>
                 <div class="catalog__card-product-active">
-                  <button class="catalog__card-product-btn btn" type="button">В корзину</button>
-                  <button class="catalog__card-product-add" type="button">Добавить к сравнению</button>
+                  <a class="catalog__card-product-btn btn" href="basket.html">В корзину</a>
+                  <a class="catalog__card-product-add" href="comparison.html">Добавить к сравнению</a>
                 </div>
                 <div class="catalog__card-product-wrap">
                   <a class="catalog__card-product-description" href="#">Любительская селфи-палка</a>
@@ -159,8 +168,8 @@
                   <img class="catalog__card-product-img" alt="Профессиональная селфи-палка (фото)" src="img/selfie-stick_pro.jpg" width="360" height="380">
                 </div>
                 <div class="catalog__card-product-active">
-                    <button class="catalog__card-product-btn btn" type="button">В корзину</button>
-                    <button class="catalog__card-product-add" type="button">Добавить к сравнению</button>
+                    <a class="catalog__card-product-btn btn" href="basket.html">В корзину</a>
+                    <a class="catalog__card-product-add" href="comparison.html">Добавить к сравнению</a>
                   </div>
                 <div class="catalog__card-product-wrap">
                   <a class="catalog__card-product-description" href="#">Профессиональная<br>селфи-палка</a>
@@ -172,8 +181,8 @@
                   <img class="catalog__card-product-img" alt="Непотопляемая селфи-палка (фото)" src="img/selfie-stick_unsinkable.jpg" width="360" height="380">
                 </div>           
                 <div class="catalog__card-product-active">
-                    <button class="catalog__card-product-btn btn" type="button">В корзину</button>
-                    <button class="catalog__card-product-add" type="button">Добавить к сравнению</button>
+                    <a class="catalog__card-product-btn btn" href="basket.html">В корзину</a>
+                    <a class="catalog__card-product-add" href="comparison.html">Добавить к сравнению</a>
                 </div>
                 <div class="catalog__card-product-wrap">
                   <a class="catalog__card-product-description" href="#">Непотопляемая селфи-палка</a>
@@ -185,8 +194,8 @@
                   <img class="catalog__card-product-img" alt="Селфи-палка «Следуй за мной» (фото)" src="img/selfie-stick_follow-me.jpg" width="360" height="380">
                 </div> 
                 <div class="catalog__card-product-active">
-                    <button class="catalog__card-product-btn btn" type="button">В корзину</button>
-                    <button class="catalog__card-product-add" type="button">Добавить к сравнению</button>
+                    <a class="catalog__card-product-btn btn" href="basket.html">В корзину</a>
+                    <a class="catalog__card-product-add" href="comparison.html">Добавить к сравнению</a>
                 </div>
                 <div class="catalog__card-product-wrap">
                   <a class="catalog__card-product-description" href="#">Селфи-палка «Следуй за мной»</a>
@@ -195,9 +204,7 @@
               </article>
             </section>
             <section class="catalog-nav">
-              <div class="catalog-nav__wrap">
-                <a class="catalog-nav__btn catalog-nav__btn_prev" href="#">Назад</a>
-              </div>  
+              <a class="catalog-nav__btn catalog-nav__btn_prev" href="#">Назад</a>
               <ul class="catalog-nav__pagination">
                 <li class="catalog-nav__pagination-item">
                   <a class="catalog-nav__pagination-link catalog-nav__pagination-link_active" href="#">1</a>
@@ -209,9 +216,7 @@
                   <a class="catalog-nav__pagination-link" href="#">3</a>
                 </li>
               </ul>
-              <div class="catalog-nav__wrap">
-                <a class="catalog-nav__btn catalog-nav__btn_next" href="#">Вперед</a>
-              </div>
+              <a class="catalog-nav__btn catalog-nav__btn_next" href="#">Вперед</a>
             </section> 
           </div> 
         </div> 
