@@ -14,8 +14,8 @@ var warranty = document.querySelector(".services__tabs-item_warranty");
 var credit = document.querySelector(".services__tabs-item_credit"); 
 
 var writeUs = document.querySelector(".form-write-us");
-var login = writeUs.querySelector("[name=name]");
-var password = writeUs.querySelector("[name=email]"); 
+var name = writeUs.querySelector("[name=name]");
+var email = writeUs.querySelector("[name=email]"); 
 
 contactsBtn.addEventListener ("click", function (evt) {
     evt.preventDefault();
@@ -25,7 +25,7 @@ contactsBtn.addEventListener ("click", function (evt) {
 closeWrite.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalWrite.classList.remove("modal_open");
-    modalWrite.classList.remove("modal-error");
+    modalWrite.classList.remove("modal_error");
 });
 
 writeUs.addEventListener ("submit", function (evt) {
