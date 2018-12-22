@@ -26,10 +26,11 @@
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translate(50% 50%);
+    -webkit-transform: translate(50% 50%);
+            transform: translate(50% 50%);
   }
 
   10%,
@@ -37,14 +38,41 @@
   50%,
   70%,
   90% {
-    transform: translate(-52%, -50%);
+    -webkit-transform: translate(-52%, -50%);
+            transform: translate(-52%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate(-48%, -50%);
+    -webkit-transform: translate(-48%, -50%);
+            transform: translate(-48%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(50% 50%);
+            transform: translate(50% 50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(-52%, -50%);
+            transform: translate(-52%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(-48%, -50%);
+            transform: translate(-48%, -50%);
   }
 }
 
@@ -1750,7 +1778,7 @@ a {
 .sorting {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   min-width: 760px;
   padding-left: 70px;
 
@@ -2145,7 +2173,7 @@ a {
   background-color: #edb5b5;
 }
 
-.form-write-us__textarea {
+.form-write-us__input_text {
   width: 100%;
   height: 156px;
   padding: 20px;

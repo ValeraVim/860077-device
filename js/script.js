@@ -14,8 +14,8 @@ var warranty = document.querySelector(".services__tabs-item_warranty");
 var credit = document.querySelector(".services__tabs-item_credit"); 
 
 var writeUs = document.querySelector(".form-write-us");
-var name = writeUs.querySelector("[name=name]");
-var email = writeUs.querySelector("[name=email]"); 
+var inputName = writeUs.querySelector(".form-write-us__input_name");
+var inputEmail = writeUs.querySelector(".form-write-us__input_email"); 
 
 contactsBtn.addEventListener ("click", function (evt) {
     evt.preventDefault();
@@ -28,10 +28,9 @@ closeWrite.addEventListener("click", function (evt) {
     modalWrite.classList.remove("modal_error");
 });
 
-writeUs.addEventListener ("submit", function (evt) {
-    evt.preventDefault();  
+writeUs.addEventListener ("submit", function (evt) { 
     modalWrite.classList.remove("modal_error");     
-    if (!name.value || !email.value) {
+    if (!inputName.value || !inputEmail.value) {
         evt.preventDefault();
         modalWrite.offsetWidth = writeUs.offsetWidth;
         modalWrite.classList.add("modal_error");
