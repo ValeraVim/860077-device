@@ -30,7 +30,7 @@
   0%,
   100% {
     transform: translate(50% 50%);
-  } 
+  }
 
   10%,
   30%,
@@ -45,7 +45,7 @@
   60%,
   80% {
     transform: translate(-48%, -50%);
-  } 
+  }
 }
 
 @keyframes puff {
@@ -1384,12 +1384,12 @@ a {
 
 .site-main__header {
   margin-bottom: 45px;
-  padding-left: 110px;
 }
 
 .site-main__title {
   margin: 0;
   margin-bottom: 25px;
+  margin-left: 60px;
   padding: 0;
 
   font-weight: 800;
@@ -1401,6 +1401,7 @@ a {
 
 .breadscrumbs__list {
   display: flex;
+  margin-left: 60px;
   padding: 0;
 
   list-style: none;

@@ -29,10 +29,10 @@ closeWrite.addEventListener("click", function (evt) {
 });
 
 writeUs.addEventListener ("submit", function (evt) {
-    evt.preventDefault();       
+    evt.preventDefault();  
+    modalWrite.classList.remove("modal_error");     
     if (!name.value || !email.value) {
         evt.preventDefault();
-        modalWrite.classList.add("modal_error");
         modalWrite.offsetWidth = writeUs.offsetWidth;
         modalWrite.classList.add("modal_error");
       } 
