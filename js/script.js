@@ -13,6 +13,10 @@ var delivery = document.querySelector(".services__tabs-item_delivery");
 var warranty = document.querySelector(".services__tabs-item_warranty");  
 var credit = document.querySelector(".services__tabs-item_credit"); 
 
+var writeUs = document.querySelector(".form-write-us");
+var login = writeUs.querySelector("[name=name]");
+var password = writeUs.querySelector("[name=email]"); 
+
 contactsBtn.addEventListener ("click", function (evt) {
     evt.preventDefault();
     modalWrite.classList.add("modal_open");
@@ -21,6 +25,17 @@ contactsBtn.addEventListener ("click", function (evt) {
 closeWrite.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalWrite.classList.remove("modal_open");
+    modalWrite.classList.remove("modal-error");
+});
+
+writeUs.addEventListener ("submit", function (evt) {
+    evt.preventDefault();       
+    if (!name.value || !email.value) {
+        evt.preventDefault();
+        modalWrite.classList.add("modal_error");
+        modalWrite.offsetWidth = writeUs.offsetWidth;
+        modalWrite.classList.add("modal_error");
+      } 
 });
 
 contactsMap.addEventListener ("click", function (evt) {
@@ -69,3 +84,4 @@ creditBtn.addEventListener ("click", function (evt) {
     delivery.classList.add("services__tabs-item_close");
     warranty.classList.add("services__tabs-item_close");
 });
+

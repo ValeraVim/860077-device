@@ -37,14 +37,14 @@
   50%,
   70%,
   90% {
-    transform: translateX(-60%);
+    transform: translateX(-55%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(-40%);
+    transform: translateX(-45%);
   }
 }
 
@@ -951,11 +951,11 @@ a {
 }
 
 .partners-list__item {
-  padding-right: 35px;
+  margin-right: 35px;
 }
 
 .partners-list__item:nth-child(4n) {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .partners-list {
@@ -1115,7 +1115,7 @@ a {
 }
 
 .site-footer {
-  min-width: 1200px;
+  width: 100%;
 
   color: #e5e5e5;
 
@@ -1384,7 +1384,7 @@ a {
 
 .site-main__header {
   margin-bottom: 45px;
-  padding-left: 60px;
+  padding-left: 110px;
 }
 
 .site-main__title {
@@ -2049,7 +2049,7 @@ a {
 }
 
 .modal_error {
-display: block;
+  display: block;
 
   -webkit-animation: shake 0.6s;
           animation: shake 0.6s;
