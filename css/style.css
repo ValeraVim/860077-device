@@ -847,6 +847,7 @@ a {
 }
 
 .services {
+  min-width: 1240px;
   background: linear-gradient(to bottom, #ffffff 0px, #ffffff 20px, #e5e5e5 20px);
 }
 
@@ -1143,7 +1144,7 @@ a {
 }
 
 .site-footer {
-  width: 100%;
+  min-width: 1200px;
 
   color: #e5e5e5;
 
@@ -1777,10 +1778,8 @@ a {
 
 .sorting {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  min-width: 760px;
-  padding-left: 70px;
+  padding-left: 68px;
 
   background-color: #ebebeb;
 }
@@ -1808,8 +1807,8 @@ a {
   width: 530px;
   margin: 0;
   padding: 0;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 13px;
+  padding-left: 20px;
 
   list-style: none;
 }
