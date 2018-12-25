@@ -419,7 +419,6 @@ input[type="radio"].visually-hidden {
 
 .site-header__user-item_login {
   width: 270px;
-  padding-right: 10px;
 }
 
 .site-header__user-item_basket {
@@ -432,6 +431,10 @@ input[type="radio"].visually-hidden {
   padding-left: 25px;
 
   color: #000000;
+}
+
+.site-header__user-link_login {
+  padding-right: 20px;
 }
 
 .site-header__user-link:hover {
