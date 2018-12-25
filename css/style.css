@@ -107,14 +107,22 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .btn {
@@ -825,6 +833,7 @@ a {
 }
 
 .product-type__item {
+  position: relative;
   width: 160px;
   margin-right: 40px;
   margin-bottom: 20px;
@@ -832,6 +841,24 @@ a {
 
 .product-type__item:nth-child(6n) {
   margin-right: 0;
+}
+
+.product-type__item::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+
+  display: block;
+  width: 160px;
+  height: 160px;
+ 
+  background-color: #f0c52e;
+  opacity: 0.5;
+}
+
+.product-type__item:hover::before {
+  opacity: 1;
 }
 
 .product-type__link {
@@ -848,7 +875,7 @@ a {
 }
 
 .product-type__link:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .product-type__link::before {
@@ -860,13 +887,11 @@ a {
   width: 160px;
   height: 160px;
 
-  background-color: rgba(240, 197, 46, 0.5);
   background-repeat: no-repeat;
 }
 
-.product-type__link:hover::before,
 .product-type__link:active::before {
-  background-color: #f0c52e;
+  opacity: 0.3;
 }
 
 .product-type__link_virtual::before {
@@ -903,9 +928,7 @@ a {
   min-width: 1200px;
 
   background: -webkit-linear-gradient(top, #ffffff 0px, #ffffff 20px, #e5e5e5 20px);
-
   background: -o-linear-gradient(top, #ffffff 0px, #ffffff 20px, #e5e5e5 20px);
-
   background: linear-gradient(to bottom, #ffffff 0px, #ffffff 20px, #e5e5e5 20px);
 }
 
@@ -1220,7 +1243,7 @@ a {
 }
 
 .site-footer {
-  width: 1200px;
+  width: 100%;
 
   color: #e5e5e5;
 
@@ -1529,11 +1552,14 @@ a {
   color: #000000;
 }
 
+.breadscrumbs {
+  margin-left: 60px;
+}
+
 .breadscrumbs__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 60px;
   padding: 0;
 
   list-style: none;
@@ -1908,7 +1934,6 @@ a {
   -ms-flex-align: center;
   align-items: center;
   padding-left: 68px;
-
   background-color: #ebebeb;
 }
 
@@ -1937,6 +1962,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 534px;
   margin: 0;
   padding: 0;
   padding-right: 13px;
